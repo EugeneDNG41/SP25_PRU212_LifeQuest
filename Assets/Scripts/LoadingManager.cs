@@ -10,7 +10,7 @@ using System.Collections.Generic;
 
 public class LoadingManager : MonoBehaviour
 {
-    public TMP_Text loadingText;
+    public Text loadingText;
     public Slider progressBar;
     public GameObject loadingScene;
     public GameObject gameScene;

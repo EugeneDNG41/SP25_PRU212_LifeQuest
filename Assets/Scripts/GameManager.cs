@@ -1,5 +1,6 @@
 ﻿using Firebase.Extensions;
 using Firebase.Firestore;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,6 +11,7 @@ using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
+    
     public static GameManager Instance { get; private set; }
     private FirebaseFirestore firestore;
     
@@ -19,23 +21,29 @@ public class GameManager : MonoBehaviour
     private HashSet<string> playedScenarios = new();
 
     [Header("Player Elements")]
-    [SerializeField] private TMP_Text PlayerName;
-    [SerializeField] private TMP_Text PlayerAge;
-    [SerializeField] private TMP_Text LifeStage;
-    [SerializeField] private TMP_Text PlayerHealth;
-    [SerializeField] private TMP_Text PlayerHappiness;
-    [SerializeField] private TMP_Text PlayerWealth;
+    [SerializeField] private Text PlayerName;
+    [SerializeField] private Text PlayerAge;
+    [SerializeField] private Text LifeStage;
 
     [Header("Scenario Elements")]
-    [SerializeField] private TMP_Text ScenarioText;
-    [SerializeField] private TMP_Text ChoiceTextA;
-    [SerializeField] private TMP_Text ChoiceTextB;
-    [SerializeField] private TMP_Text ChoiceTextC;
-    [SerializeField] private TMP_Text ChoiceTextD;
+    [SerializeField] private Text ScenarioText;
+    [SerializeField] private Text ChoiceTextA;
+    [SerializeField] private Text ChoiceTextB;
+    [SerializeField] private Text ChoiceTextC;
+    [SerializeField] private Text ChoiceTextD;
     [SerializeField] private Button ChoiceA;
     [SerializeField] private Button ChoiceB;
     [SerializeField] private Button ChoiceC;
     [SerializeField] private Button ChoiceD;
+
+    [Header("Player Image")]
+    [SerializeField] public GameObject Toddler;
+    [SerializeField] public GameObject Child;
+    [SerializeField] public GameObject Adolescent;
+    [SerializeField] public GameObject MiddleAge;
+    [SerializeField] public GameObject Elder;
+    [SerializeField] public GameObject Death;
+    [SerializeField] public GameObject Adult;
 
     public Dictionary<string, Scenario> scenarios = new();
     public Dictionary<string, Stage> stages = new();
@@ -336,8 +344,9 @@ public class GameManager : MonoBehaviour
         currentPlayer = new Player();
         string[] firstNameArray = { "John", "Emma", "Michael", "Olivia", "William" };
         string[] lastNameArray = { "Smith", "Johnson", "Brown", "Davis", "Miller" };
-        string firstName = firstNameArray[Random.Range(0, firstNameArray.Length)];
-        string lastName = lastNameArray[Random.Range(0, lastNameArray.Length)];
+        string firstName = firstNameArray[UnityEngine.Random.Range(0, firstNameArray.Length)];
+        string lastName = lastNameArray[UnityEngine.Random.Range(0, lastNameArray.Length)];
+
         currentPlayer.Name = firstName + " " + lastName;
         playedScenarios.Clear();
         UpdateUI();
@@ -389,7 +398,7 @@ public class GameManager : MonoBehaviour
 
         if (validScenarios.Count > 0)
         {
-            var selectedEntry = validScenarios[Random.Range(0, validScenarios.Count)];
+            var selectedEntry = validScenarios[UnityEngine.Random.Range(0, validScenarios.Count)];
             playedScenarios.Add(selectedEntry.Key); 
             return selectedEntry.Value; 
         }
@@ -404,11 +413,11 @@ public class GameManager : MonoBehaviour
         // Shuffle the choices before displaying them
         var shuffledChoices = currentScenario.Choices.Values
                             .Where(c => c.RequiredTraitId == null || currentPlayer.UnlockedTraits.ContainsKey(c.RequiredTraitId))
-                            .OrderBy(c => Random.Range(0, int.MaxValue)) // Shuffle choices
+                            .OrderBy(c => UnityEngine.Random.Range(0, int.MaxValue)) // Shuffle choices
                             .ToList();
 
         Button[] choiceButtons = { ChoiceA, ChoiceB, ChoiceC, ChoiceD };
-        TMP_Text[] choiceTexts = { ChoiceTextA, ChoiceTextB, ChoiceTextC, ChoiceTextD };
+        Text[] choiceTexts = { ChoiceTextA, ChoiceTextB, ChoiceTextC, ChoiceTextD };
 
         for (int i = 0; i < 4; i++)
         {
@@ -428,7 +437,7 @@ public class GameManager : MonoBehaviour
     {
         // Pick a random outcome from available ones
         List<Outcome> possibleOutcomes = new List<Outcome>(choice.Outcomes.Values);
-        Outcome selectedOutcome = possibleOutcomes[Random.Range(0, possibleOutcomes.Count)];
+        Outcome selectedOutcome = possibleOutcomes[UnityEngine.Random.Range(0, possibleOutcomes.Count)];
 
         // Apply the outcome's impact
         ApplyOutcome(selectedOutcome, choice);
@@ -456,7 +465,7 @@ public class GameManager : MonoBehaviour
         Button selectedButton = choiceButtonMapping.FirstOrDefault(x => x.Value == selectedChoice).Key;
         if (selectedButton != null)
         {
-            TMP_Text buttonText = selectedButton.GetComponentInChildren<TMP_Text>();
+            Text buttonText = selectedButton.GetComponentInChildren<Text>();
             if (buttonText != null)
             {
                 buttonText.text = outcome.Description;  // Replace button text with outcome
@@ -486,9 +495,8 @@ public class GameManager : MonoBehaviour
     {
         PlayerName.text = currentPlayer.Name;
         PlayerAge.text = currentPlayer.Age.ToString();
-        PlayerHealth.text = currentPlayer.Health.ToString();
-        PlayerHappiness.text = currentPlayer.Happiness.ToString();
-        PlayerWealth.text = currentPlayer.Wealth.ToString();
+        GetAnimationTriggerByAge(currentPlayer.Age);
+        PlayDeathImage(currentPlayer.Health);
         foreach (var stage in stages)
         {
             if (currentPlayer.Age >= stage.Value.AgeRange.MinAge && currentPlayer.Age <= stage.Value.AgeRange.MaxAge)
@@ -499,4 +507,55 @@ public class GameManager : MonoBehaviour
             }
         }
     }
+
+    private void PlayDeathImage(int Health)
+    {
+        
+        if (Health < 0)
+        {
+            Death.SetActive(true);
+            Toddler.SetActive(false);
+            Child.SetActive(false);
+            Adult.SetActive(false);
+            Adolescent.SetActive(false);
+            Elder.SetActive(false);
+            MiddleAge.SetActive(false);
+        }      
+        
+        else Death.SetActive(false);
+
+    }
+    private void GetAnimationTriggerByAge(int age)
+    {
+        Debug.Log("GetAnimationTriggerByAge loaded successfully!");
+        if (age >= 0 && age <= 4) Toddler.SetActive(true); // toddler
+        if (age >= 5 && age <= 10)// Child
+        {
+            Toddler.SetActive(false);
+            Child.SetActive(true);
+        }
+        if (age >= 11 && age <= 17)// Adolescent 
+        {
+            Adolescent.SetActive(true);
+            Child.SetActive(false);
+        }
+        if (age >= 18 && age <= 39) //Adult 
+        {
+            Adolescent.SetActive(false);
+            Adult.SetActive(true);
+
+        }
+        if (age >= 40 && age <= 64) //Middle Age
+        {
+            Adult.SetActive(false);
+            MiddleAge.SetActive(true);
+        }
+    
+        if (age >= 65 && age <= 100) //Elder 
+        {
+            MiddleAge.SetActive(false);
+            Elder.SetActive(true);
+        }
+    }
+    
 }

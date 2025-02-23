@@ -90,7 +90,7 @@ public class LoadDataManager : MonoBehaviour
 
         tile.transform.Find("NameBG/Name").GetComponent<Text>().text = data.Name;
         tile.transform.Find("HealthBG/Age").GetComponent<Text>().text = $"Age: {data.Age}";
-        tile.transform.Find("NameBG/Sex").GetComponent<Text>().text = $"Sex: {data.Sex}";
+        tile.transform.Find("NameBG/Sex").GetComponent<Text>().text = $"{data.Sex}";
         tile.transform.Find("StatusBG/Happiness").GetComponent<Text>().text = $"{data.Happiness}";
         tile.transform.Find("StatusBG/Health").GetComponent<Text>().text = $"{data.Health}";
         tile.transform.Find("StatusBG/Wealth").GetComponent<Text>().text = $"{data.Wealth}";
