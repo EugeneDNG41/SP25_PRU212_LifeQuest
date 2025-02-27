@@ -67,6 +67,7 @@ public class UIManager : MonoBehaviour
     }
     public void StartGame()
     {
+        mainMenuUI.SetActive(true);
         SceneManager.LoadScene("GameScene");
     }
     public void Quit()
@@ -80,16 +81,23 @@ public class UIManager : MonoBehaviour
     }
     private void Start()
     {
-        if (LoadSaveUI == null)
+        if (PlayerPrefs.GetInt("ReturnFromGame", 0) == 1)
         {
-            Debug.LogError("LoadSaveUI is missing! Trying to find it in the scene...");
-            LoadSaveUI = GameObject.Find("LoadSaveUI");
+            // Quay về từ GameScene -> Bật mainMenuUI
+            loginUI.SetActive(false);
+            mainMenuUI.SetActive(true);
+            SettingUI.SetActive(false);
 
-            if (LoadSaveUI == null)
-            {
-                Debug.LogError("LoadSaveUI is STILL missing! Check your scene hierarchy.");
-            }
+            PlayerPrefs.SetInt("ReturnFromGame", 0); // Reset lại trạng thái
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            // Mở Login UI như bình thường khi vào game
+            loginUI.SetActive(true);
+            mainMenuUI.SetActive(false);
         }
     }
+
 }
 

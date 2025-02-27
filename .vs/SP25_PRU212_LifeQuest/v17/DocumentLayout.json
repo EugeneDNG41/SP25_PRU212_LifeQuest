@@ -1,0 +1,288 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|d:\\unity\\github\\sp25_pru212_lifequest\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\UIImageExporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UIImageExporter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\scripts\\uifill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uifill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\animation\\script\\buttonhovereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\animation\\script\\buttonhovereffect.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\scripts\\loadsavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadsavemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\scripts\\loadsceneuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadsceneuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\bg\\outlinegeneratoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\bg\\outlinegeneratoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\scripts\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\bg\\outlinegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\bg\\outlinegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\assets\\bg\\mycustomshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\bg\\mycustomshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\UIFill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\UIFill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\ScrollSwitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\ScrollSwitch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\CharacterUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\CharacterUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UIFill.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\UIFill.cs",
+              "RelativeDocumentMoniker": "Assets\\UIFill.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\UIFill.cs",
+              "RelativeToolTip": "Assets\\UIFill.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAArwCcAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T12:01:14.325Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T01:59:50.889Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UIImageExporter.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\UIImageExporter.cs",
+              "RelativeDocumentMoniker": "Assets\\UIImageExporter.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\UIImageExporter.cs",
+              "RelativeToolTip": "Assets\\UIImageExporter.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-27T01:00:55.413Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UIFill.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\UIFill.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIFill.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\UIFill.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIFill.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAUwBwAAABsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:08:27.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAwGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T02:23:36.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoadsaveManager.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadsaveManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadsaveManager.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadsaveManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadsaveManager.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:51:27.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAIBZwCkAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T15:28:25.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ScrollSwitch.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\ScrollSwitch.cs",
+              "RelativeDocumentMoniker": "Assets\\ScrollSwitch.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\ScrollSwitch.cs",
+              "RelativeToolTip": "Assets\\ScrollSwitch.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:59:24.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ButtonHoverEffect.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Animation\\Script\\ButtonHoverEffect.cs",
+              "RelativeDocumentMoniker": "Assets\\Animation\\Script\\ButtonHoverEffect.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Animation\\Script\\ButtonHoverEffect.cs",
+              "RelativeToolTip": "Assets\\Animation\\Script\\ButtonHoverEffect.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T16:07:52.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CharacterUI.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\CharacterUI.cs",
+              "RelativeDocumentMoniker": "Assets\\CharacterUI.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\CharacterUI.cs",
+              "RelativeToolTip": "Assets\\CharacterUI.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T01:56:57.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoadSceneUIManager.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadSceneUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadSceneUIManager.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadSceneUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadSceneUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABRAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:51:35.308Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\AuthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AuthManager.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\AuthManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AuthManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T02:40:32.376Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "OutlineGeneratorEditor.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGeneratorEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\BG\\OutlineGeneratorEditor.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGeneratorEditor.cs",
+              "RelativeToolTip": "Assets\\BG\\OutlineGeneratorEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:55:59.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "OutlineGenerator.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\BG\\OutlineGenerator.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGenerator.cs",
+              "RelativeToolTip": "Assets\\BG\\OutlineGenerator.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:47:38.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MyCustomShader.shader",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\BG\\MyCustomShader.shader",
+              "RelativeDocumentMoniker": "Assets\\BG\\MyCustomShader.shader",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\BG\\MyCustomShader.shader",
+              "RelativeToolTip": "Assets\\BG\\MyCustomShader.shader",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-02-17T13:46:44.343Z"
+            }
+          ]
+        },
+        {
+          "DockedWidth": 537,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
