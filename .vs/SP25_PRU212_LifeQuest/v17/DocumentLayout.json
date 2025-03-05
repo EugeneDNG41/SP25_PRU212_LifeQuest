@@ -1,0 +1,275 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|e:\\lifequest\\sp25_pru212_lifequest\\assets\\scripts\\loaddatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loaddatamanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\uimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|e:\\lifequest\\sp25_pru212_lifequest\\assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\pausemenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\quizmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\scenariomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenariomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\loadsceneuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadsceneuimanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\loadingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\loadingmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\authmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\firestoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\firestoremanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\scripts\\data\\playedscenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\data\\playedscenario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\bg\\outlinegeneratoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\bg\\outlinegeneratoreditor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\bg\\outlinegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\bg\\outlinegenerator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|E:\\LifeQuest\\SP25_PRU212_LifeQuest\\assets\\bg\\mycustomshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{C2D5974A-C0EA-A6E2-5826-490E49CA4954}|Assembly-CSharp.csproj|solutionrelative:assets\\bg\\mycustomshader.shader||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\CharacterUI.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PauseMenu.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\PauseMenu.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\PauseMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\PauseMenu.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T03:30:16.816Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoadDataManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadDataManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadDataManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadDataManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadDataManager.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAUwCkAAABxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:51:27.033Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "LoadSceneUIManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadSceneUIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadSceneUIManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadSceneUIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadSceneUIManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T17:51:35.308Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QuizManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\QuizManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\QuizManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\QuizManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\QuizManager.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAYwBIAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T13:48:01.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ScenarioManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\ScenarioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\ScenarioManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\ScenarioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\ScenarioManager.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAowGIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T06:44:36.993Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\GameManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\GameManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManager.cs",
+              "ViewState": "AgIAAI4AAAAAAAAAAADwv50AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-19T15:28:25.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UIManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\UIManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UIManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\UIManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UIManager.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAxwEUAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T02:23:36.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "LoadingManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadingManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\LoadingManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\LoadingManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\LoadingManager.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAgwCoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T06:54:04.47Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AuthManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\AuthManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\AuthManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\AuthManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\AuthManager.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAEwFEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-05T02:35:18.535Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "FirestoreManager.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\FirestoreManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\FirestoreManager.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\FirestoreManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\FirestoreManager.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAmwDEAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T06:58:32.056Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "PlayedScenario.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\Data\\PlayedScenario.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Data\\PlayedScenario.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\Scripts\\Data\\PlayedScenario.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Data\\PlayedScenario.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAwwAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-04T14:19:45.278Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "CharacterUI.cs",
+              "DocumentMoniker": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\CharacterUI.cs",
+              "ToolTip": "D:\\unity\\GitHub\\SP25_PRU212_LifeQuest\\Assets\\CharacterUI.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwBoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T01:56:57.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "OutlineGeneratorEditor.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGeneratorEditor.cs",
+              "RelativeDocumentMoniker": "Assets\\BG\\OutlineGeneratorEditor.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGeneratorEditor.cs",
+              "RelativeToolTip": "Assets\\BG\\OutlineGeneratorEditor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:55:59.631Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "OutlineGenerator.cs",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGenerator.cs",
+              "RelativeDocumentMoniker": "Assets\\BG\\OutlineGenerator.cs",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\BG\\OutlineGenerator.cs",
+              "RelativeToolTip": "Assets\\BG\\OutlineGenerator.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAkwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T13:47:38.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MyCustomShader.shader",
+              "DocumentMoniker": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\BG\\MyCustomShader.shader",
+              "RelativeDocumentMoniker": "Assets\\BG\\MyCustomShader.shader",
+              "ToolTip": "E:\\LifeQuest\\SP25_PRU212_LifeQuest\\Assets\\BG\\MyCustomShader.shader",
+              "RelativeToolTip": "Assets\\BG\\MyCustomShader.shader",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002777|",
+              "WhenOpened": "2025-02-17T13:46:44.343Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

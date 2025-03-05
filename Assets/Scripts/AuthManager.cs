@@ -12,6 +12,7 @@ public class AuthManager : MonoBehaviour
     public DependencyStatus dependencyStatus;
     public FirebaseAuth auth;    
     public FirebaseUser User;
+    public FirestoreManager firestoreManager;
 
     //Login variables
     [Header("Login")]
@@ -28,8 +29,15 @@ public class AuthManager : MonoBehaviour
     public TMP_InputField passwordRegisterVerifyField;
     public TMP_Text warningRegisterText;
 
+    public static AuthManager Instance;
+   
     void Awake()
     {
+
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
         //Check that all of the necessary dependencies for Firebase are present on the system
         FirebaseApp.CheckAndFixDependenciesAsync().ContinueWith(task =>
         {
@@ -44,12 +52,13 @@ public class AuthManager : MonoBehaviour
                 Debug.LogError("Could not resolve all Firebase dependencies: " + dependencyStatus);
             }
         });
+        firestoreManager = FirestoreManager.Instance;
     }
 
     private void InitializeFirebase()
     {
         Debug.Log("Setting up Firebase Auth");
-        //Set the authentication instance object
+        //Set the authentication Instance object
         auth = FirebaseAuth.DefaultInstance;
     }
 
@@ -68,7 +77,7 @@ public class AuthManager : MonoBehaviour
     public void LogoutButton()
     {
         auth.SignOut();
-        UIManager.instance.LoginScreen();
+        UIManager.Instance.LoginScreen();
     }
 
     private IEnumerator Login(string _email, string _password)
@@ -114,7 +123,8 @@ public class AuthManager : MonoBehaviour
             Debug.LogFormat("User signed in successfully: {0} ({1})", User.DisplayName, User.Email);
             warningLoginText.text = "";
             confirmLoginText.text = "Logged In";
-            UIManager.instance.MainMenuScreen();
+            
+            UIManager.Instance.MainMenuScreen();
         }
     }
 
@@ -166,6 +176,8 @@ public class AuthManager : MonoBehaviour
             {
                 //User has now been created
                 //Now get the result
+                Task save = firestoreManager.SaveToFirestore<User>("users", User.UserId, new User { Username = _username });
+                //Now get the result
                 User = RegisterTask.Result.User;
 
                 if (User != null)
@@ -190,7 +202,7 @@ public class AuthManager : MonoBehaviour
                     {
                         //Username is now set
                         //Now return to login screen
-                        UIManager.instance.LoginScreen();
+                        UIManager.Instance.LoginScreen();
                         warningRegisterText.text = "";
                     }
                 }

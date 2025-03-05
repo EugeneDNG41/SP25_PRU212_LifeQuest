@@ -5,20 +5,23 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager instance;
+    public static UIManager Instance;
 
     //Screen object variables
     public GameObject loginUI;
     public GameObject registerUI;
     public GameObject mainMenuUI;
+    public GameObject LoadSaveUI;
+    public GameObject SettingUI;
 
+    private LoadDataManager LoadDataManager;
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
-        else if (instance != null)
+        else if (Instance != null)
         {
             Debug.Log("Instance already exists, destroying object!");
             Destroy(this);
@@ -40,9 +43,31 @@ public class UIManager : MonoBehaviour
     {
         loginUI.SetActive(false);
         mainMenuUI.SetActive(true);
+        SettingUI.SetActive(false);
+    }
+    public async void LoadSaveScreen()
+    {
+        if (LoadSaveUI == null)
+        {
+            Debug.LogError("LoadSaveUI is null! Make sure it is assigned in the Inspector.");
+            return; // Prevent further errors
+        }
+
+        if (mainMenuUI != null)
+            mainMenuUI.SetActive(false);
+        
+        LoadSaveUI.SetActive(true);
+        await LoadDataManager.Instance.StartLoadingProcess();
+        Debug.Log("LoadSaveUI loaded successfully!");
+    }
+    public void SettingMenuScreen() // Login button
+    {
+        SettingUI.SetActive(true);
+        mainMenuUI.SetActive(false);
     }
     public void StartGame()
     {
+        //mainMenuUI.SetActive(true);
         SceneManager.LoadScene("GameScene");
     }
     public void Quit()
@@ -54,5 +79,25 @@ public class UIManager : MonoBehaviour
     {
         // Save data here      
     }
+    private void Start()
+    {
+        if (PlayerPrefs.GetInt("ReturnFromGame", 0) == 1)
+        {
+            // Quay về từ GameScene -> Bật mainMenuUI
+            loginUI.SetActive(false);
+            mainMenuUI.SetActive(true);
+            SettingUI.SetActive(false);
+
+            PlayerPrefs.SetInt("ReturnFromGame", 0); // Reset lại trạng thái
+            PlayerPrefs.Save();
+        }
+        else
+        {
+            // Mở Login UI như bình thường khi vào game
+            loginUI.SetActive(true);
+            mainMenuUI.SetActive(false);
+        }
+    }
+
 }
 

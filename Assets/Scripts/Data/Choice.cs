@@ -15,6 +15,9 @@ public class Choice
 
     [FirestoreProperty]
     public string RequiredTraitId { get; set; }
+    [FirestoreProperty]
+    public string QuizId { get; set; }
+    public Quiz Quiz { get; set; }
     public Trait RequiredTrait { get; set; }
 
     [FirestoreProperty]
