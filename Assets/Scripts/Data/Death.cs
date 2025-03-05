@@ -6,15 +6,17 @@ using System.Text;
 using System.Threading.Tasks;
 
 [FirestoreData]
-public class Quiz
+public class Death
 {
-    //public string QuizId { get; set; }
+    [FirestoreProperty]
+    public string Title { get; set; }
 
     [FirestoreProperty]
     public string Description { get; set; }
+    [FirestoreProperty]
+    public string Cause { get; set; } // AGE100, HEALTH0, HAPPINESS0, WEALTH0, HAPPINESS100, WEALTH100, HEALTH100
+    [FirestoreProperty]
+    public string StageId { get; set; }
 
-    [FirestoreProperty]
-    public Dictionary<string, QuizQuestion> Questions { get; set; } = new();
-    [FirestoreProperty]
-    public Dictionary<string, Outcome> Outcomes { get; set; } = new();
 }
+

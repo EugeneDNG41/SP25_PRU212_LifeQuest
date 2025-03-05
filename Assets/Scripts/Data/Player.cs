@@ -9,7 +9,6 @@ using UnityEngine;
 [FirestoreData]
 public class Player
 {
-    //public string UserId { get; set; }  // Reference to User (Firebase UID)
 
     [FirestoreProperty]
     public string Name { get; set; }
@@ -31,6 +30,8 @@ public class Player
 
     [FirestoreProperty]
     public string Status { get; set; }
+    [FirestoreProperty]
+    public string DeathId { get; set; }
 
     [FirestoreProperty]
     public string StageId { get; set; }
@@ -40,6 +41,9 @@ public class Player
 
     [FirestoreProperty]
     public Dictionary<string, Trait> UnlockedTraits { get; set; } = new();
+    [FirestoreProperty]
+    public Dictionary<string, PlayedScenario> PlayedScenarios { get; set; } = new();
+
 
     public Player()
     {
@@ -48,5 +52,6 @@ public class Player
         Wealth = 50;
         Age = 0;
         UnlockedTraits = new Dictionary<string, Trait>();
+        PlayedScenarios = new Dictionary<string, PlayedScenario>();
     }
 }

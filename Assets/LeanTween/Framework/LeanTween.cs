@@ -1186,7 +1186,7 @@ public class LeanTween : MonoBehaviour {
     * <summary>This works by tweening the vertex colors directly</summary>
     <br />
     Vertex-based coloring is useful because you avoid making a copy of your
-    object's material for each instance that needs a different color.<br />
+    object's material for each Instance that needs a different color.<br />
     <br />
     A shader that supports vertex colors is required for it to work
     (for example the shaders in Mobile/Particles/)

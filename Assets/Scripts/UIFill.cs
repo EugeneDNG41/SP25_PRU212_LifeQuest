@@ -26,11 +26,11 @@ public class UIFill : MonoBehaviour
 
         if (gameManager == null)
         {
-            Debug.LogError("GameManager instance is NULL! Make sure it's initialized before accessing UIFill.");
+            Debug.LogError("GameManager Instance is NULL! Make sure it's initialized before accessing UIFill.");
             return;
         }
 
-        if (gameManager.currentPlayer == null)
+        if (gameManager.currentPlayer.Value == null)
         {
             Debug.LogError("currentPlayer is NULL! Ensure it's assigned in GameManager before UIFill starts.");
             return;
@@ -43,11 +43,11 @@ public class UIFill : MonoBehaviour
     // Update is called once per frame
     void UpdateUI()
     {
-        if (gameManager == null || gameManager.currentPlayer == null) return;
+        if (gameManager == null || gameManager.currentPlayer.Value == null) return;
 
-        currenHealthValue = gameManager.currentPlayer.Health;
-        currenHappinessValue = gameManager.currentPlayer.Happiness;
-        currenWealthValue = gameManager.currentPlayer.Wealth;
+        currenHealthValue = gameManager.currentPlayer.Value.Health;
+        currenHappinessValue = gameManager.currentPlayer.Value.Happiness;
+        currenWealthValue = gameManager.currentPlayer.Value.Wealth;
 
         if (Heartfill != null)
             Heartfill.fillAmount = (float)currenHealthValue / maxValue;

@@ -19,6 +19,6 @@ public class PlayerTileUI : MonoBehaviour
         playerHealthText.text = $"Health: {player.Health}";
         playerHappinessText.text = $"Happiness: {player.Happiness}";
         playerWealthText.text = $"Wealth: {player.Wealth}";
-        playerStatusText.text = player.Status;
+        //playerStatusText.text = player.Status;
     }
 }

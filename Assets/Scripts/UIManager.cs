@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 {
-    public static UIManager instance;
+    public static UIManager Instance;
 
     //Screen object variables
     public GameObject loginUI;
@@ -14,14 +14,14 @@ public class UIManager : MonoBehaviour
     public GameObject LoadSaveUI;
     public GameObject SettingUI;
 
-    public LoadDataManager LoadDataManager;
+    private LoadDataManager LoadDataManager;
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
-        else if (instance != null)
+        else if (Instance != null)
         {
             Debug.Log("Instance already exists, destroying object!");
             Destroy(this);
@@ -57,7 +57,7 @@ public class UIManager : MonoBehaviour
             mainMenuUI.SetActive(false);
         
         LoadSaveUI.SetActive(true);
-        await LoadDataManager.StartLoadingProcess();
+        await LoadDataManager.Instance.StartLoadingProcess();
         Debug.Log("LoadSaveUI loaded successfully!");
     }
     public void SettingMenuScreen() // Login button
@@ -67,7 +67,7 @@ public class UIManager : MonoBehaviour
     }
     public void StartGame()
     {
-        mainMenuUI.SetActive(true);
+        //mainMenuUI.SetActive(true);
         SceneManager.LoadScene("GameScene");
     }
     public void Quit()
