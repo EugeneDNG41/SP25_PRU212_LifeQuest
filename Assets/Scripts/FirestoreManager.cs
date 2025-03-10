@@ -1,4 +1,4 @@
-using Firebase.Firestore;
+﻿using Firebase.Firestore;
 using System.Collections;
 using System.Collections.Generic;
 using System.Threading.Tasks;
@@ -23,16 +23,23 @@ public class FirestoreManager : MonoBehaviour
 
     private void Awake()
     {
-        InitializeFirestore();
-        if (Instance == null) Instance = this;
-        else Destroy(gameObject);
-
-        DontDestroyOnLoad(gameObject);
-        
+        if (Instance == null)
+        {
+            Instance = this;
+            DontDestroyOnLoad(gameObject);
+            Debug.Log("✅ FirestoreManager Instance đã được khởi tạo!");
+            InitializeFirestore();
+        }
+        else
+        {
+            Debug.LogWarning("⚠️ FirestoreManager đã tồn tại, huỷ object mới!");
+            Destroy(gameObject);
+        }
     }
+
     //public async void Save()
     //{
-        
+
     //}
 
     private void InitializeFirestore()

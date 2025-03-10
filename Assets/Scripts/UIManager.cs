@@ -57,6 +57,7 @@ public class UIManager : MonoBehaviour
             mainMenuUI.SetActive(false);
         
         LoadSaveUI.SetActive(true);
+      
         await LoadDataManager.Instance.StartLoadingProcess();
         Debug.Log("LoadSaveUI loaded successfully!");
     }

@@ -10,7 +10,7 @@ public class LoadSceneUIManager : MonoBehaviour
     public GameObject loadingPanel; // Assign in Inspector
     public Slider loadingSlider; // Assign in Inspector
     public Text loadingText; // Assign in Inspector
-
+    public Image loadingImage;
     private void Awake()
     {
         if (Instance == null) Instance = this;
@@ -19,6 +19,7 @@ public class LoadSceneUIManager : MonoBehaviour
     }
     public async Task ShowLoadingScreen()
     {
+        loadingImage.gameObject.SetActive(true);
         loadingPanel.SetActive(true);
         float duration = 5f;
         float elapsedTime = 0f;
@@ -33,5 +34,6 @@ public class LoadSceneUIManager : MonoBehaviour
         }
 
         loadingPanel.SetActive(false);
+        loadingImage.gameObject.SetActive(false);
     }
 }
