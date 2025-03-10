@@ -17,15 +17,10 @@ public class UIManager : MonoBehaviour
     private LoadDataManager LoadDataManager;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else if (Instance != null)
-        {
-            Debug.Log("Instance already exists, destroying object!");
-            Destroy(this);
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
     }
 
     //Functions to change the login screen UI
