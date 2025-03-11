@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -156,8 +156,8 @@ public class LoadingManager : MonoBehaviour
             foreach (DocumentSnapshot document in snapshot.Documents)
             {
                 T data = document.ConvertTo<T>();
-                storage.Add(document.Id, data);
-            }
+                    storage.Add(document.Id, data);
+                }
             Debug.Log($"Loaded {storage.Count} items from {collectionName}");
         }
     }

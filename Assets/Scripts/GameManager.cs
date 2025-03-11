@@ -3,6 +3,7 @@ using Firebase.Firestore;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -11,8 +12,10 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
-    private FirebaseFirestore firestore;
-    
+    private Firestore firestore;
+    public FlipPanel flipDeath;
+    public FlipPanel flipReasonDeath;
+
     public Player currentPlayer;
     private Scenario currentScenario;
     private Dictionary<Button, Choice> choiceButtonMapping = new();
@@ -25,6 +28,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] private TMP_Text PlayerHealth;
     [SerializeField] private TMP_Text PlayerHappiness;
     [SerializeField] private TMP_Text PlayerWealth;
+    [SerializeField] private GameObject Death;
+    [SerializeField] private GameObject ReasonDeath;
+    [SerializeField] private TMP_Text reasonText;
 
     [Header("Scenario Elements")]
     [SerializeField] private TMP_Text ScenarioText;
@@ -36,6 +42,7 @@ public class GameManager : MonoBehaviour
     [SerializeField] private Button ChoiceB;
     [SerializeField] private Button ChoiceC;
     [SerializeField] private Button ChoiceD;
+    
 
     public Dictionary<string, Scenario> scenarios = new();
     public Dictionary<string, Stage> stages = new();
@@ -43,15 +50,14 @@ public class GameManager : MonoBehaviour
     public Dictionary<string, StatImpact> statImpact = new();
     public Dictionary<string, AgeRange> ageRanges = new();
 
-
-
+    string reasonDeath = "";
     void Awake()
     {     
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
 
-        DontDestroyOnLoad(gameObject);
-    }
+            DontDestroyOnLoad(gameObject);
+        }
     //private async void Start()
     //{
     //    if (firestore == null)
@@ -64,7 +70,7 @@ public class GameManager : MonoBehaviour
     //}
     private void InitializeFirestore()
     {
-        firestore = FirebaseFirestore.DefaultInstance;
+        firestore = Firestore.DefaultInstance;
         if (firestore == null)
         {
             Debug.LogError("Firestore is null");
@@ -348,12 +354,50 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Age >= 100)
         {
             Debug.Log("Game Over - Player reached maximum age.");
+            Death.SetActive(true);
+            reasonDeath = "You lived a century, but slipped on a banana peel during your birthday party.";
             return;
         }
-        if (currentPlayer.Health <= 0 || currentPlayer.Happiness <= 0 || currentPlayer.Wealth <= 0 || 
-            currentPlayer.Health >= 100 || currentPlayer.Happiness >= 100 || currentPlayer.Wealth >= 100)
+        if (currentPlayer.Health <= 0)
         {
             Debug.Log("Game Over - Player has died.");
+            Death.SetActive(true);
+            reasonDeath = "You exercised so hard that your muscles decided to quit... permanently.";
+            return;
+        }
+        if (currentPlayer.Happiness <= 0)
+        {
+            Debug.Log("Game Over - Player has died.");
+            Death.SetActive(true);
+            reasonDeath = "You were truly unfortunate, passing away forever with no one by your side.";
+            return;
+        }
+        if (currentPlayer.Wealth <= 0)
+        {
+            Debug.Log("Game Over - Player has died.");
+            Death.SetActive(true);
+            reasonDeath = "You sold your soul to pay off your debts. Turns out, the soul market crashed";
+            return;
+        }
+        if (currentPlayer.Health >= 100)
+        {
+            Debug.Log("Game Over - Player has died.");
+            Death.SetActive(true);
+            reasonDeath = "You became so fit that you ran straight into another dimension. Nobody’s seen you since.";
+            return;
+        }
+        if (currentPlayer.Happiness >= 100)
+        {
+            Debug.Log("Game Over - Player has died.");
+            Death.SetActive(true);
+            reasonDeath = "You laughed so hard at a joke that you simply evaporated into pure joy.";
+            return;
+        }
+        if (currentPlayer.Wealth >= 100)
+        {
+            Debug.Log("Game Over - Player has died.");
+            Death.SetActive(true);
+            reasonDeath = "You bought the entire planet, but now there’s nothing left to buy. You died of boredom.";
             return;
         }
         currentScenario = SelectScenario();
@@ -365,6 +409,14 @@ public class GameManager : MonoBehaviour
         {
             Debug.LogWarning("No scenario found for this age.");
         }
+    }
+
+    public void DeathButton()
+    {
+        Debug.Log("DeathButton clicked!"); // Kiểm tra xem có chạy không
+        Death.SetActive(false);
+        ReasonDeath.SetActive(true);
+        reasonText.text = reasonDeath;
     }
 
     private Scenario SelectScenario()
