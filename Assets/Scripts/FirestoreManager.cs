@@ -23,24 +23,12 @@ public class FirestoreManager : MonoBehaviour
 
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-            DontDestroyOnLoad(gameObject);
-            Debug.Log("✅ FirestoreManager Instance đã được khởi tạo!");
-            InitializeFirestore();
-        }
-        else
-        {
-            Debug.LogWarning("⚠️ FirestoreManager đã tồn tại, huỷ object mới!");
-            Destroy(gameObject);
-        }
+        InitializeFirestore();
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
     }
-
-    //public async void Save()
-    //{
-
-    //}
 
     private void InitializeFirestore()
     {
@@ -54,23 +42,6 @@ public class FirestoreManager : MonoBehaviour
             Debug.Log("Firestore is ready");
         }
     }
-    //public async Task LoadPlayer(string uid)
-    //{
-    //    var snapshot = await firestore.Collection($"users/{uid}/players").GetSnapshotAsync();
-    //    if (snapshot == null || snapshot.Count == 0)
-    //    {
-    //        Debug.LogWarning("No players found.");
-    //        return;
-    //    }
-
-    //    foreach (DocumentSnapshot document in snapshot.Documents)
-    //    {
-    //        Player data = document.ConvertTo<Player>();
-    //        players.Add(document.Id, data);
-    //    }
-
-    //    Debug.Log($"Loaded {players.Count} players.");
-    //}
     public async Task LoadGameData()
     {
         if (firestore == null)

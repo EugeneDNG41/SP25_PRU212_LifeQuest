@@ -14,18 +14,12 @@ public class UIManager : MonoBehaviour
     public GameObject LoadSaveUI;
     public GameObject SettingUI;
 
-    private LoadDataManager LoadDataManager;
     private void Awake()
     {
-        if (Instance == null)
-        {
-            Instance = this;
-        }
-        else if (Instance != null)
-        {
-            Debug.Log("Instance already exists, destroying object!");
-            Destroy(this);
-        }
+        if (Instance == null) Instance = this;
+        else Destroy(gameObject);
+
+        DontDestroyOnLoad(gameObject);
     }
 
     //Functions to change the login screen UI
@@ -58,27 +52,25 @@ public class UIManager : MonoBehaviour
         
         LoadSaveUI.SetActive(true);
       
-        await LoadDataManager.Instance.StartLoadingProcess();
+        await LoadDataManager.Instance.LoadGameData();
         Debug.Log("LoadSaveUI loaded successfully!");
     }
-    public void SettingMenuScreen() // Login button
+    public void SettingMenuScreen()
     {
         SettingUI.SetActive(true);
         mainMenuUI.SetActive(false);
     }
     public void StartGame()
     {
-        //mainMenuUI.SetActive(true);
-        SceneManager.LoadScene("GameScene");
+        //mainMenuUI.SetActive(false);
+
+        // Load GameScene additively
+        SceneManager.LoadScene("GameScene", LoadSceneMode.Additive);
     }
     public void Quit()
     {
         // Quit button
         Application.Quit();
-    }
-    public void OnApplicationQuit()
-    {
-        // Save data here      
     }
     private void Start()
     {

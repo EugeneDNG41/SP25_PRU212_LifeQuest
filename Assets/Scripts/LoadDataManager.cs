@@ -25,19 +25,15 @@ public class LoadDataManager : MonoBehaviour
     public Text confirmPlayerHealth;
     public Text confirmPlayerWealth;
     public Text confirmPlayerStatus;
-    private Player pendingPlayer;
-    public Transform traitsGrid;
-    public GameObject traitsWindow;
-    public Button traitsButton;
-    public Button scenariosButton;
-    private bool isTraitsExpanded = false;
-    private bool isScenariosExpanded = false;
-    private Player confirmedPlayer;
+    private KeyValuePair<string, Player> pendingPlayer;
+    //public Transform traitsGrid;
+    //public GameObject traitsWindow;
+    //public Button traitsButton;
+    //public Button scenariosButton;
+    //private bool isTraitsExpanded = false;
 
-    private LoadSceneUIManager loadSceneUIManager;
     private FirestoreManager firestoreManager;
-    private Dictionary<string, string> traitsDictionary = new Dictionary<string, string>();
-    public KeyValuePair<string, Player> currentPlayer;
+    public KeyValuePair<string, Player> loadedPlayer;
 
     void Awake()
     {
@@ -45,31 +41,15 @@ public class LoadDataManager : MonoBehaviour
         else Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
-        loadSceneUIManager = LoadSceneUIManager.Instance;
         firestoreManager = FirestoreManager.Instance;
-        StartCoroutine(WaitForFirestoreManager());
-        LoadTraits();
     }
 
-    IEnumerator WaitForFirestoreManager()
-    {
-        while (FirestoreManager.Instance == null)
-        {
-            yield return null;
-        }
-        firestoreManager = FirestoreManager.Instance;
-        loadSceneUIManager = LoadSceneUIManager.Instance;
-    }
     void Start()
     {
-        traitsButton.onClick.AddListener(ToggleTraits);
+        //traitsButton.onClick.AddListener(ToggleTraits);
 
-        // Mặc định ẩn 2 grid
-        traitsWindow.gameObject.SetActive(false);
-    }
-    public async Task StartLoadingProcess()
-    {
-        await LoadGameData();
+        //// Mặc định ẩn 2 grid
+        //traitsWindow.gameObject.SetActive(false);
     }
 
     public async Task LoadGameData()
@@ -89,6 +69,10 @@ public class LoadDataManager : MonoBehaviour
         if (firestoreManager.players.Count == 0)
         {
             await firestoreManager.LoadCollection($"users/{uid}/players", firestoreManager.players);
+            firestoreManager.players.Where(currentPlayer => currentPlayer.Value != null
+                                                && !string.IsNullOrEmpty(currentPlayer.Value.DeathId)
+                                                && !string.IsNullOrEmpty(currentPlayer.Value.ScenarioId)
+                                                && currentPlayer.Value.Age < 100).ToDictionary(p => p.Key, p => p.Value);
         }
 
         foreach (Transform child in gridParent) Destroy(child.gameObject);
@@ -97,11 +81,11 @@ public class LoadDataManager : MonoBehaviour
         int totalPlayers = firestoreManager.players.Count;
         int count = 0;
 
-        foreach (var player in firestoreManager.players.Values)
+        foreach (var player in firestoreManager.players)
         {
             Task<GameObject> tileTask = CreatePlayerTile(player);
             tileTasks.Add(tileTask);
-            Debug.Log($"📥 Loading player: {player.Name}, Age: {player.Age}");
+            Debug.Log($"📥 Loading player: {player.Value.Name}, Age: {player.Value.Age}");
             count++;
             float progress = (float)count / totalPlayers;
             loadingSlider.value = progress;
@@ -130,18 +114,18 @@ public class LoadDataManager : MonoBehaviour
         }
     }
 
-    private async Task<GameObject> CreatePlayerTile(Player data)
+    private async Task<GameObject> CreatePlayerTile(KeyValuePair<string, Player> data)
     {
         GameObject tile = Instantiate(playerTilePrefab, gridParent);
         tile.SetActive(true);
 
-        tile.transform.Find("NameBG/Name").GetComponent<Text>().text = data.Name;
-        tile.transform.Find("HealthBG/Age").GetComponent<Text>().text = $"Age: {Mathf.Max(0, data.Age - 1)}";
-        tile.transform.Find("NameBG/Sex").GetComponent<Text>().text = $"{data.Sex}";
-        tile.transform.Find("StatusBG/Happiness").GetComponent<Text>().text = $"{data.Happiness}";
-        tile.transform.Find("StatusBG/Health").GetComponent<Text>().text = $"{data.Health}";
-        tile.transform.Find("StatusBG/Wealth").GetComponent<Text>().text = $"{data.Wealth}";
-        tile.transform.Find("HealthBG/Status").GetComponent<Text>().text = $"{data.Status}";
+        tile.transform.Find("NameBG/Name").GetComponent<Text>().text = data.Value.Name;
+        tile.transform.Find("HealthBG/Age").GetComponent<Text>().text = $"Age: {Mathf.Max(0, data.Value.Age - 1)}";
+        tile.transform.Find("NameBG/Sex").GetComponent<Text>().text = $"{data.Value.Sex}";
+        tile.transform.Find("StatusBG/Happiness").GetComponent<Text>().text = $"{data.Value.Happiness}";
+        tile.transform.Find("StatusBG/Health").GetComponent<Text>().text = $"{data.Value.Health}";
+        tile.transform.Find("StatusBG/Wealth").GetComponent<Text>().text = $"{data.Value.Wealth}";
+        tile.transform.Find("HealthBG/Status").GetComponent<Text>().text = $"{data.Value.Status}";
 
         Button button = tile.GetComponentInChildren<Button>();
         if (button != null)
@@ -154,33 +138,17 @@ public class LoadDataManager : MonoBehaviour
         return tile;
     }
 
-    private void OnPlayerTileClicked(Player selectedPlayer)
+    private void OnPlayerTileClicked(KeyValuePair<string, Player> selectedPlayer)
     {
-        if (selectedPlayer == null) return;
+        if (selectedPlayer.Value == null) return;
 
         pendingPlayer = selectedPlayer;
-        confirmPlayerName.text = pendingPlayer.Name;
-        confirmPlayerAge.text = $"Age: {pendingPlayer.Age}";
-        confirmPlayerSex.text = $"Sex: {pendingPlayer.Sex}";
-        confirmPlayerHappiness.text = $"{pendingPlayer.Happiness}";
-        confirmPlayerHealth.text = $"{pendingPlayer.Health}";
-        confirmPlayerWealth.text = $"{pendingPlayer.Wealth}";
-
-        foreach (Transform child in traitsGrid) Destroy(child.gameObject);
-        foreach (var traitId in pendingPlayer.UnlockedTraits.Keys)
-        {
-            string traitName = traitsDictionary.ContainsKey(traitId) ? traitsDictionary[traitId] : "Unknown Trait";
-            GameObject traitItem = new GameObject("TraitItem", typeof(Text));
-            traitItem.transform.SetParent(traitsGrid);
-
-            Text textComponent = traitItem.GetComponent<Text>();
-            textComponent.text = traitName;
-            textComponent.font = confirmPlayerName.font;
-            textComponent.fontSize = 100;
-        }
-
-        int traitsCount = pendingPlayer.UnlockedTraits.Count;
-        traitsButton.GetComponentInChildren<Text>().text = $"Unlocked Traits ({traitsCount})";
+        confirmPlayerName.text = pendingPlayer.Value.Name;
+        confirmPlayerAge.text = $"Age: {pendingPlayer.Value.Age}";
+        confirmPlayerSex.text = $"Sex: {pendingPlayer.Value.Sex}";
+        confirmPlayerHappiness.text = $"{pendingPlayer.Value.Happiness}";
+        confirmPlayerHealth.text = $"{pendingPlayer.Value.Health}";
+        confirmPlayerWealth.text = $"{pendingPlayer.Value.Wealth}";
 
         Button playButton = confirmLoadWindow.transform.Find("Buttons/PlayButton")?.GetComponent<Button>();
         Button quitButton = confirmLoadWindow.transform.Find("Buttons/Quit")?.GetComponent<Button>();
@@ -192,57 +160,16 @@ public class LoadDataManager : MonoBehaviour
         SavePanel.SetActive(false);
         confirmLoadWindow.SetActive(true);
     }
-    public void ExitGrid()
-    {
-        traitsWindow.gameObject.SetActive(false);
-    }
-    private void ToggleTraits()
-    {
 
-        Debug.Log($"✅ ToggleTraits");
-        isTraitsExpanded = !isTraitsExpanded;
-        traitsWindow.gameObject.SetActive(isTraitsExpanded);
-    }
-
-    
-    private async void LoadTraits()
+    private void PlayGame(KeyValuePair<string, Player> player)
     {
-        CollectionReference traitsCollection = FirebaseFirestore.DefaultInstance.Collection("traits");
-        QuerySnapshot snapshot = await traitsCollection.GetSnapshotAsync();
-        foreach (DocumentSnapshot document in snapshot.Documents)
-        {
-            if (document.Exists)
-            {
-                string traitId = document.Id;
-                string traitName = document.GetValue<string>("Name");
-                traitsDictionary[traitId] = traitName;
-                Debug.Log($"Loaded Trait: {traitId} - {traitName}"); // Debug log added
-            }
-        }
-    }
-    private void PlayGame(Player player)
-    {
-        if (player == null)
+        if (player.Value == null)
         {
             Debug.LogError("❌ Cannot start game: player is NULL!");
             return;
         }
-
-        if (firestoreManager == null || firestoreManager.players == null)
-        {
-            Debug.LogError("❌ FirestoreManager or players dictionary is NULL!");
-            return;
-        }
-
-        string playerKey = firestoreManager.players.FirstOrDefault(p => p.Value == player).Key;
-        if (string.IsNullOrEmpty(playerKey))
-        {
-            Debug.LogError("❌ Player key not found in FirestoreManager!");
-            return;
-        }
-
-        currentPlayer = new KeyValuePair<string, Player>(playerKey, player);
-        Debug.Log($"🎮 Starting game with player: {currentPlayer.Value.Name}");
+        loadedPlayer = pendingPlayer;
+        Debug.Log($"🎮 Starting game with player: {loadedPlayer.Value.Name}");
 
         SceneManager.LoadScene("GameScene");
     }

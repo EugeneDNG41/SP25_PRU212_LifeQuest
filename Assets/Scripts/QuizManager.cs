@@ -41,12 +41,12 @@ public class QuizManager : MonoBehaviour
             if (timer <= 0f)
             {
                 timerActive = false;
-                Task.FromResult(SelectRandomAnswer());
+                SelectRandomAnswer();
             }
         }
     }
 
-    public async Task StartQuiz(string quizId)
+    public void StartQuiz(string quizId)
     {
         if (!firestoreManager.quizzes.TryGetValue(quizId, out currentQuiz))
         {
@@ -58,10 +58,10 @@ public class QuizManager : MonoBehaviour
         questionIndex = 0;
         questionList = currentQuiz.Questions.Values.ToList();
         gameManager.TimerText.gameObject.SetActive(true);
-        await DisplayNextQuestion();
+        DisplayNextQuestion();
     }
 
-    private async Task DisplayNextQuestion()
+    private void DisplayNextQuestion()
     {
         if (questionIndex < currentQuiz.Questions.Count)
         {
@@ -70,7 +70,7 @@ public class QuizManager : MonoBehaviour
         }
         else
         {
-            await SubmitQuiz();
+            SubmitQuiz();
         }
     }
     private IEnumerator StartQuestionTimer()
@@ -79,36 +79,36 @@ public class QuizManager : MonoBehaviour
 
         while (timeRemaining > 0)
         {
-            gameManager.TimerText.text = $"Time: {Mathf.Ceil(timeRemaining)}s";
+            gameManager.TimerText.text = $"{Mathf.Ceil(timeRemaining)}";
             yield return new WaitForSeconds(1f);
             timeRemaining--;
         }
 
         gameManager.TimerText.text = "Time's up!";
-        Task.FromResult(SelectRandomAnswer());
+        SelectRandomAnswer();
     }
-    public async Task SelectAnswer(QuizAnswer answer)
+    public void SelectAnswer(QuizAnswer answer)
     {
         if (answer.IsCorrect) correctAnswers++;
         questionIndex++;
         gameManager.lastSelectedButton = gameManager.choiceButtonMapping.FirstOrDefault(x => x.Value == answer).Key;
-        await DisplayNextQuestion();
+        DisplayNextQuestion();
     }
-    private async Task SelectRandomAnswer()
+    private void SelectRandomAnswer()
     {
         var availableAnswers = gameManager.choiceButtonMapping.Values.OfType<QuizAnswer>().ToList();
         if (availableAnswers.Count > 0)
         {
             QuizAnswer randomAnswer = availableAnswers[Random.Range(0, availableAnswers.Count)];
-            await SelectAnswer(randomAnswer);
+            SelectAnswer(randomAnswer);
         }
     }
-    private async Task SubmitQuiz()
+    private void SubmitQuiz()
     {
         float correctPercentage = (float)correctAnswers / currentQuiz.Questions.Count;
         string outcomeKey = correctPercentage >= 0.6f ? "Success" : "Failure";
         Outcome quizOutcome = currentQuiz.Outcomes[outcomeKey];
         gameManager.TimerText.gameObject.SetActive(false);
-        await gameManager.ApplyOutcome(quizOutcome);
+        gameManager.ApplyOutcome(quizOutcome);
     }
 }

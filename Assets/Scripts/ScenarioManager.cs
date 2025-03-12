@@ -11,7 +11,6 @@ public class ScenarioManager : MonoBehaviour
     private FirestoreManager firestoreManager;
     private GameManager gameManager;
     private PlayedScenario currentPlayedScenario;
-    //public HashSet<string> playedScenarios = new();
 
     private void Awake()
     {
@@ -76,11 +75,11 @@ public class ScenarioManager : MonoBehaviour
         
     }
 
-    public async Task SelectChoice(Choice choice)
+    public void SelectChoice(Choice choice)
     {
         if (choice.QuizId != null)
         {
-            await QuizManager.Instance.StartQuiz(choice.QuizId);
+            QuizManager.Instance.StartQuiz(choice.QuizId);
         }
         else
         {
@@ -90,12 +89,8 @@ public class ScenarioManager : MonoBehaviour
             currentPlayedScenario.ChoiceDescription = choice.Description;
             currentPlayedScenario.OutcomeDescription = selectedOutcome.Description;
             var scenarioId = gameManager.currentPlayer.Value.ScenarioId;        
-            gameManager.currentPlayer.Value.PlayedScenarios.Add(scenarioId, currentPlayedScenario);
-            //if (AuthManager.Instance.User != null)
-            //{
-            //    await firestoreManager.SaveToFirestore($"users/{AuthManager.Instance.User.UserId}/players/{gameManager.currentPlayer.Key}/playedScenarios", scenarioId, currentPlayedScenario);
-            //}           
-            await GameManager.Instance.ApplyOutcome(selectedOutcome);
+            gameManager.currentPlayer.Value.PlayedScenarios.Add(scenarioId, currentPlayedScenario);   
+            GameManager.Instance.ApplyOutcome(selectedOutcome);
         }
     }
 }

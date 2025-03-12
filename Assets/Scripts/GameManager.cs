@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
     private FirestoreManager firestoreManager;
     public KeyValuePair<string, Player> currentPlayer;
-    //public Player currentPlayer;
+    //public Player loadedPlayer;
     public Dictionary<Button, object> choiceButtonMapping = new();
     public Button lastSelectedButton;
 
@@ -59,9 +59,9 @@ public class GameManager : MonoBehaviour
 
     public void StartGame()
     {
-        if (LoadDataManager.Instance.currentPlayer.Value != null)
+        if (LoadDataManager.Instance.loadedPlayer.Value != null)
         {
-            currentPlayer = LoadDataManager.Instance.currentPlayer;
+            currentPlayer = LoadDataManager.Instance.loadedPlayer;
             Scenario scenario = firestoreManager.scenarios[currentPlayer.Value.ScenarioId];
             DisplayScenario(scenario);
         } else
@@ -73,7 +73,6 @@ public class GameManager : MonoBehaviour
             ScenarioManager.Instance.NextTurn();
         }
         
-        //ScenarioManager.Instance.playedScenarios.Clear();
         UpdateUI();
         ScenarioManager.Instance.NextTurn();
     }
@@ -116,12 +115,12 @@ public class GameManager : MonoBehaviour
             {
                 choiceTexts[i].text = answer.Description;
 
-                choiceButtons[i].onClick.AddListener(async () => await QuizManager.Instance.SelectAnswer(answer));
+                choiceButtons[i].onClick.AddListener(() => QuizManager.Instance.SelectAnswer(answer));
             }
             else if (choices[i] is Choice choice)
             {
                 choiceTexts[i].text = choice.Description;
-                choiceButtons[i].onClick.AddListener(async () =>  await ScenarioManager.Instance.SelectChoice(choice));
+                choiceButtons[i].onClick.AddListener(() => ScenarioManager.Instance.SelectChoice(choice));
             }
         }
         for (int i = choices.Count; i < 4; i++)
@@ -130,7 +129,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public async Task ApplyOutcome(Outcome outcome)
+    public void ApplyOutcome(Outcome outcome)
     {
         // Disable all choice buttons
         foreach (var button in choiceButtonMapping.Keys)
@@ -156,11 +155,6 @@ public class GameManager : MonoBehaviour
         {
             currentPlayer.Value.UnlockedTraits.Add(outcome.ResultTraitId, outcome.ResultTrait);
         }
-
-        //if (AuthManager.Instance.User != null)
-        //{
-        //    await firestoreManager.SaveToFirestore($"users/{AuthManager.Instance.User.UserId}/players", currentPlayer.Key, currentPlayer.Value);           
-        //}
 
         StartCoroutine(WaitForNextClick());
     }

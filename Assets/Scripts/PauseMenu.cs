@@ -22,12 +22,16 @@ public class PauseComponent : MonoBehaviour
     public void Home()
     {
         Time.timeScale = 1f;
+        LoadDataManager.Instance.loadedPlayer = GameManager.Instance.currentPlayer;
 
-        // Lưu trạng thái để UIManager biết không mở Login Screen nữa
-        PlayerPrefs.SetInt("ReturnFromGame", 1);
-        PlayerPrefs.Save();
+        // Unload the gameplay scene and return to main menu
+        SceneManager.UnloadSceneAsync("GameScene");
 
-        SceneManager.LoadScene("MainMenu");
+        if (UIManager.Instance != null)
+        {
+            UIManager.Instance.MainMenuScreen();
+        }
+
     }
 
 

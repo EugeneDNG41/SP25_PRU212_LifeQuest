@@ -3639,8 +3639,6 @@ GameObject:
   - component: {fileID: 625103905}
   - component: {fileID: 625103904}
   - component: {fileID: 625103903}
-  - component: {fileID: 625103906}
-  - component: {fileID: 625103907}
   m_Layer: 0
   m_Name: EventSystem
   m_TagString: Untagged
@@ -3698,48 +3696,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &625103906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625103902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 55b124f9ecf02794f8bc0d771c6762f4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &625103907
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 625103902}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 51416c0e49cf77f4f99cde9c1717c257, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerTilePrefab: {fileID: 6888478013374545910, guid: 54b889bf65c26d144ba9aa9da9f77acc, type: 3}
-  gridParent: {fileID: 1794672959}
-  loadingSlider: {fileID: 1533324172632160168}
-  loadingText: {fileID: 2124648485}
-  loadingBG: {fileID: 733804354}
-  confirmLoadWindow: {fileID: 1850784027}
-  SavePanel: {fileID: 1381180073}
-  confirmPlayerName: {fileID: 277064061}
-  confirmPlayerAge: {fileID: 726947939}
-  confirmPlayerSex: {fileID: 909560655}
-  confirmPlayerHappiness: {fileID: 1849992942}
-  confirmPlayerHealth: {fileID: 1702472763}
-  confirmPlayerWealth: {fileID: 1752084513}
-  confirmPlayerStatus: {fileID: 590708991}
-  traitsGrid: {fileID: 1458502909}
-  traitsWindow: {fileID: 6487056485186483081}
-  traitsButton: {fileID: 8197576073486285606}
-  scenariosButton: {fileID: 0}
 --- !u!1 &652094722
 GameObject:
   m_ObjectHideFlags: 0
@@ -3931,7 +3887,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625103907}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LoadDataManager, Assembly-CSharp
         m_MethodName: ChoosePlayer
         m_Mode: 1
@@ -4969,7 +4925,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1792601445}
   m_Direction: 2
   m_Value: 0
-  m_Size: 0.9999611
+  m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -5839,7 +5795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &968930892
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6585,7 +6541,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 625103907}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: LoadDataManager, Assembly-CSharp
         m_MethodName: ExitGrid
         m_Mode: 1
@@ -8949,6 +8905,64 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1603527137}
   m_CullTransparentMesh: 1
+--- !u!1 &1637316194
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1637316196}
+  - component: {fileID: 1637316195}
+  m_Layer: 0
+  m_Name: LoadDataManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1637316195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637316194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55b124f9ecf02794f8bc0d771c6762f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTilePrefab: {fileID: 6888478013374545910, guid: 54b889bf65c26d144ba9aa9da9f77acc, type: 3}
+  gridParent: {fileID: 1794672959}
+  loadingSlider: {fileID: 1533324172632160168}
+  loadingText: {fileID: 2124648485}
+  loadingBG: {fileID: 733804354}
+  confirmLoadWindow: {fileID: 1850784027}
+  SavePanel: {fileID: 1381180073}
+  confirmPlayerName: {fileID: 277064061}
+  confirmPlayerAge: {fileID: 726947939}
+  confirmPlayerSex: {fileID: 909560655}
+  confirmPlayerHappiness: {fileID: 1849992942}
+  confirmPlayerHealth: {fileID: 1702472763}
+  confirmPlayerWealth: {fileID: 1752084513}
+  confirmPlayerStatus: {fileID: 590708991}
+--- !u!4 &1637316196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1637316194}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1115.2578, y: 548.6244, z: -4.4415655}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1648842005
 GameObject:
   m_ObjectHideFlags: 0
@@ -9744,7 +9758,7 @@ RectTransform:
   m_Father: {fileID: 219996134}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 0.9999611}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -14996,3 +15010,4 @@ SceneRoots:
   - {fileID: 2027612939}
   - {fileID: 1554235724}
   - {fileID: 150701852}
+  - {fileID: 1637316196}

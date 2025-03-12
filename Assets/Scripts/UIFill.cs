@@ -32,7 +32,7 @@ public class UIFill : MonoBehaviour
 
         if (gameManager.currentPlayer.Value == null)
         {
-            Debug.LogError("currentPlayer is NULL! Ensure it's assigned in GameManager before UIFill starts.");
+            Debug.LogError("loadedPlayer is NULL! Ensure it's assigned in GameManager before UIFill starts.");
             return;
         }
 
