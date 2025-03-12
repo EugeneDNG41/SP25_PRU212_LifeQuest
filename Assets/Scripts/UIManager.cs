@@ -62,7 +62,7 @@ public class UIManager : MonoBehaviour
     }
     public void StartGame()
     {
-        //mainMenuUI.SetActive(false);
+        mainMenuUI.SetActive(false);
 
         // Load GameScene additively
         SceneManager.LoadScene("GameScene", LoadSceneMode.Additive);
