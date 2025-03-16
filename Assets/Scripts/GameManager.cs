@@ -15,15 +15,21 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     private FirestoreManager firestoreManager;
+    public FlipPanel flipDeath;
+    public FlipPanel flipReasonDeath;
     public KeyValuePair<string, Player> currentPlayer;
     //public Player loadedPlayer;
     public Dictionary<Button, object> choiceButtonMapping = new();
     public Button lastSelectedButton;
 
+
     [Header("Player Elements")]
     [SerializeField] private Text PlayerName;
     [SerializeField] private Text PlayerAge;
     [SerializeField] private Text LifeStage;
+    [SerializeField] private GameObject DeathPanel;
+    [SerializeField] private GameObject ReasonDeath;
+    [SerializeField] private TMP_Text reasonText;
 
     [Header("Scenario Elements")]
     [SerializeField] private Text ScenarioText;
@@ -48,7 +54,7 @@ public class GameManager : MonoBehaviour
     [Header("Quiz Elements")]
     [SerializeField] public Text TimerText;
 
-
+    string reasonDeath = "";
     void Awake()
     {
         if (Instance == null) Instance = this;
@@ -188,6 +194,7 @@ public class GameManager : MonoBehaviour
 
         GetAnimationTriggerByAge(currentPlayer.Value.Age);
         PlayDeathImage(currentPlayer.Value);
+        GameOver(currentPlayer.Value);
 
         foreach (var stage in firestoreManager.stages)
         {
@@ -212,6 +219,68 @@ public class GameManager : MonoBehaviour
         else Death.SetActive(false);
 
     }
+
+    private void GameOver(Player currentPlayer)
+    {
+        if (currentPlayer.Age >= 100)
+        {
+            Debug.Log("Game Over - Player reached maximum age.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You lived a century, but slipped on a banana peel during your birthday party.";
+            return;
+        }
+        if (currentPlayer.Health <= 0)
+        {
+            Debug.Log("Game Over - Player has died.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You exercised so hard that your muscles decided to quit... permanently.";
+            return;
+        }
+        if (currentPlayer.Happiness <= 0)
+        {
+            Debug.Log("Game Over - Player has died.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You were truly unfortunate, passing away forever with no one by your side.";
+            return;
+        }
+        if (currentPlayer.Wealth <= 0)
+        {
+            Debug.Log("Game Over - Player has died.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You sold your soul to pay off your debts. Turns out, the soul market crashed";
+            return;
+        }
+        if (currentPlayer.Health >= 100)
+        {
+            Debug.Log("Game Over - Player has died.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You became so fit that you ran straight into another dimension. Nobody’s seen you since.";
+            return;
+        }
+        if (currentPlayer.Happiness >= 100)
+        {
+            Debug.Log("Game Over - Player has died.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You laughed so hard at a joke that you simply evaporated into pure joy.";
+            return;
+        }
+        if (currentPlayer.Wealth >= 100)
+        {
+            Debug.Log("Game Over - Player has died.");
+            DeathPanel.SetActive(true);
+            reasonDeath = "You bought the entire planet, but now there’s nothing left to buy. You died of boredom.";
+            return;
+        }
+    }
+    public void DeathButton()
+    {   
+        Debug.Log("DeathButton clicked!");
+        DeathPanel.SetActive(false);
+        ReasonDeath.SetActive(true);
+        reasonText.text = reasonDeath;
+    }
+
+
     private void SetDeath()
     {
         Death.SetActive(true);
