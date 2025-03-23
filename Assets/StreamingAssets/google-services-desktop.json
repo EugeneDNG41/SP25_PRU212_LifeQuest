@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "963482090240",
+    "project_id": "lifequest-a973e",
+    "storage_bucket": "lifequest-a973e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963482090240:android:8f57cfbe9168e47695d1e5",
+        "android_client_info": {
+          "package_name": "com.Company.AuthenticationTest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJghGJKLyjTkv13PEiP56S3lXY_re-PNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:963482090240:android:8acfc5faa901a36095d1e5",
+        "android_client_info": {
+          "package_name": "com.company.LifeQuest"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJghGJKLyjTkv13PEiP56S3lXY_re-PNQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
