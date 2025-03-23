@@ -106,7 +106,6 @@ public class LoadingManager : MonoBehaviour
             await LoadCollection("deaths", firestoreManager.deaths);
         }
         UpdateProgress(++currentStep, totalSteps);
-
         foreach (var scenario in firestoreManager.scenarios)
         {
             if (scenario.Value.Choices.Count == 0) await LoadCollection($"scenarios/{scenario.Key}/choices", scenario.Value.Choices);

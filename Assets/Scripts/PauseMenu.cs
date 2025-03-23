@@ -22,7 +22,13 @@ public class PauseComponent : MonoBehaviour
     public void Home()
     {
         Time.timeScale = 1f;
-        LoadDataManager.Instance.loadedPlayer = GameManager.Instance.currentPlayer;
+        if (GameManager.Instance.currentPlayer.Value.DeathId != null)
+        {
+            LoadDataManager.Instance.loadedPlayer = new KeyValuePair<string, Player>(null, null);
+        } else
+        {
+            LoadDataManager.Instance.loadedPlayer = GameManager.Instance.currentPlayer;
+        }
 
         // Unload the gameplay scene and return to main menu
         SceneManager.UnloadSceneAsync("GameScene");

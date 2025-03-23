@@ -15,56 +15,60 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance { get; private set; }
     private FirestoreManager firestoreManager;
+    private ScenarioManager scenarioManager;
+    private QuizManager quizManager;
     public FlipPanel flipDeath;
     public FlipPanel flipReasonDeath;
     public KeyValuePair<string, Player> currentPlayer;
-    //public Player loadedPlayer;
     public Dictionary<Button, object> choiceButtonMapping = new();
     public Button lastSelectedButton;
 
+    [SerializeField] public Button ChoiceA;
+    [SerializeField] public Button ChoiceB;
+    [SerializeField] public Button ChoiceC;
+    [SerializeField] public Button ChoiceD;
 
+    [SerializeField] public Text ChoiceTextA;
+    [SerializeField] public Text ChoiceTextB;
+    [SerializeField] public Text ChoiceTextC;
+    [SerializeField] public Text ChoiceTextD;
     [Header("Player Elements")]
-    [SerializeField] private Text PlayerName;
-    [SerializeField] private Text PlayerAge;
-    [SerializeField] private Text LifeStage;
     [SerializeField] private GameObject DeathPanel;
     [SerializeField] private GameObject ReasonDeath;
     [SerializeField] private TMP_Text reasonText;
 
-    [Header("Scenario Elements")]
-    [SerializeField] private Text ScenarioText;
-    [SerializeField] private Text ChoiceTextA;
-    [SerializeField] private Text ChoiceTextB;
-    [SerializeField] private Text ChoiceTextC;
-    [SerializeField] private Text ChoiceTextD;
-    [SerializeField] private Button ChoiceA;
-    [SerializeField] private Button ChoiceB;
-    [SerializeField] private Button ChoiceC;
-    [SerializeField] private Button ChoiceD;
-
-    [Header("Player Image")]
-    [SerializeField] public GameObject Toddler;
-    [SerializeField] public GameObject Child;
-    [SerializeField] public GameObject Adolescent;
-    [SerializeField] public GameObject MiddleAge;
-    [SerializeField] public GameObject Elder;
-    [SerializeField] public GameObject Death;
-    [SerializeField] public GameObject Adult;
+    private GameObject Toddler;
+    private GameObject Child;
+    private GameObject Adolescent;
+    private GameObject MiddleAge;
+    private GameObject Elder;
+    private GameObject Death;
+    private GameObject Adult;
 
     [Header("Quiz Elements")]
-    [SerializeField] public Text TimerText;
+    //[SerializeField] public Text TimerText;
 
     string reasonDeath = "";
     void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         firestoreManager = FirestoreManager.Instance;
+
+        
     }
 
     public void StartGame()
     {
+        GameObject ageManager = GameObject.Find("Canvas/GameScene/AgeManager");
+        Toddler = ageManager.transform.Find("Toddler").gameObject;
+        Child = ageManager.transform.Find("Child").gameObject;
+        Adolescent = ageManager.transform.Find("Adolescent").gameObject;
+        Adult = ageManager.transform.Find("Adult").gameObject;
+        MiddleAge = ageManager.transform.Find("MiddleAge").gameObject;
+        Elder = ageManager.transform.Find("Elder").gameObject;
+        Death = ageManager.transform.Find("Death").gameObject;
         if (LoadDataManager.Instance.loadedPlayer.Value != null)
         {
             currentPlayer = LoadDataManager.Instance.loadedPlayer;
@@ -96,7 +100,8 @@ public class GameManager : MonoBehaviour
                              .Any(id => currentPlayer.Value.UnlockedTraits.Keys.Contains(id.Trim())))
                             .OrderBy(c => Random.Range(0, int.MaxValue)) // Shuffle choices
                             .ToList();
-        ScenarioText.text = scenario.Description;
+        var scenarioText = GameObject.Find("Scenario").GetComponent<Text>();
+        scenarioText.text = scenario.Description;
         DisplayChoices(shuffledChoices);
     }
 
@@ -105,14 +110,31 @@ public class GameManager : MonoBehaviour
         var shuffledAnswers = question.Answers.Values
                             .OrderBy(c => Random.Range(0, int.MaxValue)) // Shuffle choices
                             .ToList();
-        ScenarioText.text = question.Description;
+        var scenarioText = GameObject.Find("Scenario").GetComponent<Text>();
+        scenarioText.text = question.Description;
         DisplayChoices(shuffledAnswers);
     }
     private void DisplayChoices<T>(List<T> choices)
     {
-        Button[] choiceButtons = { ChoiceA, ChoiceB, ChoiceC, ChoiceD };
-        Text[] choiceTexts = { ChoiceTextA, ChoiceTextB, ChoiceTextC, ChoiceTextD };
+        Button[] choiceButtons = new Button[]
+    {
+        GameObject.Find("A").GetComponent<Button>(),
+        GameObject.Find("B").GetComponent<Button>(),
+        GameObject.Find("C").GetComponent<Button>(),
+        GameObject.Find("D").GetComponent<Button>()
+    };
 
+        Text[] choiceTexts = new Text[]
+        {
+        GameObject.Find("AText").GetComponent<Text>(),
+        GameObject.Find("BText").GetComponent<Text>(),
+        GameObject.Find("CText").GetComponent<Text>(),
+        GameObject.Find("DText").GetComponent<Text>()
+        };
+        //Button[] choiceButtons = { ChoiceA, ChoiceB, ChoiceC, ChoiceD };
+        //Text[] choiceTexts = { ChoiceTextA, ChoiceTextB, ChoiceTextC, ChoiceTextD };
+
+        choiceButtonMapping.Clear();
         for (int i = 0; i < choices.Count; i++)
         {
             choiceButtonMapping[choiceButtons[i]] = choices[i];
@@ -152,6 +174,10 @@ public class GameManager : MonoBehaviour
             }
         }
         Debug.Log($"Outcome: {outcome.Description}");
+        //if (currentPlayer.Value.ScenarioId != "SC034")
+        //{
+            
+        //}
         currentPlayer.Value.PlayedScenarios[currentPlayer.Value.ScenarioId].OutcomeDescription = outcome.Description;
         currentPlayer.Value.Health += outcome.Impact.HealthImpact;
         currentPlayer.Value.Happiness += outcome.Impact.HappinessImpact;
@@ -161,7 +187,7 @@ public class GameManager : MonoBehaviour
         {
             currentPlayer.Value.UnlockedTraits.Add(outcome.ResultTraitId, outcome.ResultTrait);
         }
-
+        
         StartCoroutine(WaitForNextClick());
     }
     private IEnumerator WaitForNextClick()
@@ -189,8 +215,11 @@ public class GameManager : MonoBehaviour
     }
     private void UpdateUI()
     {
-        PlayerName.text = currentPlayer.Value.Name;
-        PlayerAge.text = currentPlayer.Value.Age.ToString();
+        var playerName = GameObject.Find("Name").GetComponent<Text>();
+        var playerAge = GameObject.Find("Age").GetComponent<Text>();
+        var lifeStage = GameObject.Find("Stage").GetComponent<Text>();
+        playerName.text = currentPlayer.Value.Name;
+        playerAge.text = currentPlayer.Value.Age.ToString();
 
         GetAnimationTriggerByAge(currentPlayer.Value.Age);
         PlayDeathImage(currentPlayer.Value);
@@ -200,7 +229,7 @@ public class GameManager : MonoBehaviour
         {
             if (currentPlayer.Value.Age >= stage.Value.AgeRange.MinAge && currentPlayer.Value.Age <= stage.Value.AgeRange.MaxAge)
             {
-                LifeStage.text = stage.Value.Name;
+                lifeStage.text = stage.Value.Name;
                 currentPlayer.Value.StageId = stage.Key;
                 break;
             }
@@ -225,6 +254,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Age >= 100)
         {
             Debug.Log("Game Over - Player reached maximum age.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You lived a century, but slipped on a banana peel during your birthday party.";
             return;
@@ -232,6 +262,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Health <= 0)
         {
             Debug.Log("Game Over - Player has died.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You exercised so hard that your muscles decided to quit... permanently.";
             return;
@@ -239,6 +270,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Happiness <= 0)
         {
             Debug.Log("Game Over - Player has died.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You were truly unfortunate, passing away forever with no one by your side.";
             return;
@@ -246,6 +278,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Wealth <= 0)
         {
             Debug.Log("Game Over - Player has died.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You sold your soul to pay off your debts. Turns out, the soul market crashed";
             return;
@@ -253,6 +286,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Health >= 100)
         {
             Debug.Log("Game Over - Player has died.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You became so fit that you ran straight into another dimension. Nobody’s seen you since.";
             return;
@@ -260,6 +294,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Happiness >= 100)
         {
             Debug.Log("Game Over - Player has died.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You laughed so hard at a joke that you simply evaporated into pure joy.";
             return;
@@ -267,6 +302,7 @@ public class GameManager : MonoBehaviour
         if (currentPlayer.Wealth >= 100)
         {
             Debug.Log("Game Over - Player has died.");
+            currentPlayer.DeathId = "DE001";
             DeathPanel.SetActive(true);
             reasonDeath = "You bought the entire planet, but now there’s nothing left to buy. You died of boredom.";
             return;

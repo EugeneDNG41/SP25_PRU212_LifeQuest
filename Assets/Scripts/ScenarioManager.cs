@@ -16,7 +16,7 @@ public class ScenarioManager : MonoBehaviour
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         firestoreManager = FirestoreManager.Instance;
         gameManager = GameManager.Instance;
     }
@@ -77,6 +77,9 @@ public class ScenarioManager : MonoBehaviour
 
     public void SelectChoice(Choice choice)
     {
+        currentPlayedScenario.ChoiceDescription = choice.Description;
+        var scenarioId = gameManager.currentPlayer.Value.ScenarioId;
+        gameManager.currentPlayer.Value.PlayedScenarios.Add(scenarioId, currentPlayedScenario);
         if (choice.QuizId != null)
         {
             QuizManager.Instance.StartQuiz(choice.QuizId);
@@ -85,11 +88,8 @@ public class ScenarioManager : MonoBehaviour
         {
             gameManager.lastSelectedButton = gameManager.choiceButtonMapping.FirstOrDefault(x => x.Value == choice).Key;           
             Outcome selectedOutcome = choice.Outcomes.Values.ToList()[Random.Range(0, choice.Outcomes.Count)];
-
-            currentPlayedScenario.ChoiceDescription = choice.Description;
-            currentPlayedScenario.OutcomeDescription = selectedOutcome.Description;
-            var scenarioId = gameManager.currentPlayer.Value.ScenarioId;        
-            gameManager.currentPlayer.Value.PlayedScenarios.Add(scenarioId, currentPlayedScenario);   
+   
+            //gameManager.currentPlayer.Value.PlayedScenarios[scenarioId].OutcomeDescription = selectedOutcome.Description;   
             GameManager.Instance.ApplyOutcome(selectedOutcome);
         }
     }

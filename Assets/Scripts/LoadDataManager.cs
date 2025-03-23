@@ -26,11 +26,6 @@ public class LoadDataManager : MonoBehaviour
     public Text confirmPlayerWealth;
     public Text confirmPlayerStatus;
     private KeyValuePair<string, Player> pendingPlayer;
-    //public Transform traitsGrid;
-    //public GameObject traitsWindow;
-    //public Button traitsButton;
-    //public Button scenariosButton;
-    //private bool isTraitsExpanded = false;
 
     private FirestoreManager firestoreManager;
     public KeyValuePair<string, Player> loadedPlayer;
@@ -38,18 +33,10 @@ public class LoadDataManager : MonoBehaviour
     void Awake()
     {
         if (Instance == null) Instance = this;
-        else Destroy(gameObject);
+        //else Destroy(gameObject);
 
         DontDestroyOnLoad(gameObject);
         firestoreManager = FirestoreManager.Instance;
-    }
-
-    void Start()
-    {
-        //traitsButton.onClick.AddListener(ToggleTraits);
-
-        //// Mặc định ẩn 2 grid
-        //traitsWindow.gameObject.SetActive(false);
     }
 
     public async Task LoadGameData()
@@ -69,8 +56,14 @@ public class LoadDataManager : MonoBehaviour
         if (firestoreManager.players.Count == 0)
         {
             await firestoreManager.LoadCollection($"users/{uid}/players", firestoreManager.players);
-            firestoreManager.players.Where(currentPlayer => currentPlayer.Value != null
-                                                && !string.IsNullOrEmpty(currentPlayer.Value.DeathId)
+            firestoreManager.players = firestoreManager.players.Where(currentPlayer => currentPlayer.Value != null
+                                                && currentPlayer.Value.Health > 0
+                                                && currentPlayer.Value.Health < 100
+                                                && currentPlayer.Value.Happiness > 0
+                                                && currentPlayer.Value.Happiness < 100
+                                                && currentPlayer.Value.Wealth > 0
+                                                && currentPlayer.Value.Wealth < 100
+                                                && string.IsNullOrEmpty(currentPlayer.Value.DeathId)
                                                 && !string.IsNullOrEmpty(currentPlayer.Value.ScenarioId)
                                                 && currentPlayer.Value.Age < 100).ToDictionary(p => p.Key, p => p.Value);
         }

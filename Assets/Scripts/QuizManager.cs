@@ -17,15 +17,15 @@ public class QuizManager : MonoBehaviour
     private int questionIndex = 0;
     private float timer;
     private bool timerActive;
-
+    private Coroutine timerCoroutine;
+    [SerializeField] public Text timerText;
     private void Awake()
     {
         if (Instance == null) Instance = this;
         else Destroy(gameObject);
-        DontDestroyOnLoad(gameObject);
+        //DontDestroyOnLoad(gameObject);
         firestoreManager = FirestoreManager.Instance;
         gameManager = GameManager.Instance;
-
         if (firestoreManager == null)
         {
             Debug.LogError("FirestoreManager not found!");
@@ -57,7 +57,7 @@ public class QuizManager : MonoBehaviour
         correctAnswers = 0;
         questionIndex = 0;
         questionList = currentQuiz.Questions.Values.ToList();
-        gameManager.TimerText.gameObject.SetActive(true);
+        timerText.gameObject.SetActive(true);
         DisplayNextQuestion();
     }
 
@@ -65,8 +65,9 @@ public class QuizManager : MonoBehaviour
     {
         if (questionIndex < currentQuiz.Questions.Count)
         {
+            if (timerCoroutine != null) StopCoroutine(timerCoroutine);
             gameManager.DisplayQuestion(questionList[questionIndex]);
-            StartCoroutine(StartQuestionTimer());
+            timerCoroutine = StartCoroutine(StartQuestionTimer());
         }
         else
         {
@@ -79,16 +80,17 @@ public class QuizManager : MonoBehaviour
 
         while (timeRemaining > 0)
         {
-            gameManager.TimerText.text = $"{Mathf.Ceil(timeRemaining)}";
+            timerText.text = $"{Mathf.Ceil(timeRemaining)}";
             yield return new WaitForSeconds(1f);
             timeRemaining--;
         }
 
-        gameManager.TimerText.text = "Time's up!";
+        timerText.text = "Time's up!";
         SelectRandomAnswer();
     }
     public void SelectAnswer(QuizAnswer answer)
     {
+        if (timerCoroutine != null) StopCoroutine(timerCoroutine);
         if (answer.IsCorrect) correctAnswers++;
         questionIndex++;
         gameManager.lastSelectedButton = gameManager.choiceButtonMapping.FirstOrDefault(x => x.Value == answer).Key;
@@ -108,7 +110,7 @@ public class QuizManager : MonoBehaviour
         float correctPercentage = (float)correctAnswers / currentQuiz.Questions.Count;
         string outcomeKey = correctPercentage >= 0.6f ? "Success" : "Failure";
         Outcome quizOutcome = currentQuiz.Outcomes[outcomeKey];
-        gameManager.TimerText.gameObject.SetActive(false);
+        timerText.gameObject.SetActive(false);
         gameManager.ApplyOutcome(quizOutcome);
     }
 }
