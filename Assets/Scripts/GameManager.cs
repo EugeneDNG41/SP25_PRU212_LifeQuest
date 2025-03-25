@@ -174,20 +174,25 @@ public class GameManager : MonoBehaviour
             }
         }
         Debug.Log($"Outcome: {outcome.Description}");
-        //if (currentPlayer.Value.ScenarioId != "SC034")
-        //{
-            
-        //}
+
         currentPlayer.Value.PlayedScenarios[currentPlayer.Value.ScenarioId].OutcomeDescription = outcome.Description;
         currentPlayer.Value.Health += outcome.Impact.HealthImpact;
         currentPlayer.Value.Happiness += outcome.Impact.HappinessImpact;
         currentPlayer.Value.Wealth += outcome.Impact.WealthImpact;
-
+        currentPlayer.Value.Age++;
         if (outcome.ResultTraitId != null)
         {
             currentPlayer.Value.UnlockedTraits.Add(outcome.ResultTraitId, outcome.ResultTrait);
         }
-        
+
+        foreach (var stage in firestoreManager.stages)
+        {
+            if (currentPlayer.Value.Age >= stage.Value.AgeRange.MinAge && currentPlayer.Value.Age <= stage.Value.AgeRange.MaxAge)
+            {
+                currentPlayer.Value.StageId = stage.Key;
+                break;
+            }
+        }
         StartCoroutine(WaitForNextClick());
     }
     private IEnumerator WaitForNextClick()
@@ -209,7 +214,7 @@ public class GameManager : MonoBehaviour
         {
             button.interactable = true;
         }
-        currentPlayer.Value.Age++;
+        
         UpdateUI();
         ScenarioManager.Instance.NextTurn();
     }
@@ -223,14 +228,13 @@ public class GameManager : MonoBehaviour
 
         GetAnimationTriggerByAge(currentPlayer.Value.Age);
         PlayDeathImage(currentPlayer.Value);
-        GameOver(currentPlayer.Value);
+        CheckIfDead(currentPlayer.Value);
 
         foreach (var stage in firestoreManager.stages)
         {
             if (currentPlayer.Value.Age >= stage.Value.AgeRange.MinAge && currentPlayer.Value.Age <= stage.Value.AgeRange.MaxAge)
             {
                 lifeStage.text = stage.Value.Name;
-                currentPlayer.Value.StageId = stage.Key;
                 break;
             }
         }
@@ -249,64 +253,47 @@ public class GameManager : MonoBehaviour
 
     }
 
-    private void GameOver(Player currentPlayer)
+    private void CheckIfDead(Player player)
     {
-        if (currentPlayer.Age >= 100)
+        var death = new KeyValuePair<string, Death>();
+        if (player.Age >= 100)
         {
-            Debug.Log("Game Over - Player reached maximum age.");
-            currentPlayer.DeathId = "DE001";
-            DeathPanel.SetActive(true);
-            reasonDeath = "You lived a century, but slipped on a banana peel during your birthday party.";
-            return;
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "AGE100").FirstOrDefault();          
         }
-        if (currentPlayer.Health <= 0)
+        if (player.Health <= 0)
         {
-            Debug.Log("Game Over - Player has died.");
-            currentPlayer.DeathId = "DE001";
-            DeathPanel.SetActive(true);
-            reasonDeath = "You exercised so hard that your muscles decided to quit... permanently.";
-            return;
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "HEALTH0" && d.Value.StageId == player.StageId).FirstOrDefault();
         }
-        if (currentPlayer.Happiness <= 0)
+        if (player.Happiness <= 0)
         {
-            Debug.Log("Game Over - Player has died.");
-            currentPlayer.DeathId = "DE001";
-            DeathPanel.SetActive(true);
-            reasonDeath = "You were truly unfortunate, passing away forever with no one by your side.";
-            return;
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "HAPPINESS0" && d.Value.StageId == player.StageId).FirstOrDefault();
         }
-        if (currentPlayer.Wealth <= 0)
+        if (player.Wealth <= 0)
         {
-            Debug.Log("Game Over - Player has died.");
-            currentPlayer.DeathId = "DE001";
-            DeathPanel.SetActive(true);
-            reasonDeath = "You sold your soul to pay off your debts. Turns out, the soul market crashed";
-            return;
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "WEALTH0" && d.Value.StageId == player.StageId).FirstOrDefault();
         }
-        if (currentPlayer.Health >= 100)
+        if (player.Health >= 100)
+        {
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "HEALTH100" && d.Value.StageId == player.StageId).FirstOrDefault();
+        }
+        if (player.Happiness >= 100)
+        {
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "HAPPINESS100" && d.Value.StageId == player.StageId).FirstOrDefault();
+        }
+        if (player.Wealth >= 100)
+        {
+            death = firestoreManager.deaths.Where(d => d.Value.Cause == "WEALTH100" && d.Value.StageId == player.StageId).FirstOrDefault();
+        }
+        if (death.Value != null)
         {
             Debug.Log("Game Over - Player has died.");
-            currentPlayer.DeathId = "DE001";
+            player.DeathId = death.Key;
             DeathPanel.SetActive(true);
-            reasonDeath = "You became so fit that you ran straight into another dimension. Nobody’s seen you since.";
+            reasonDeath = death.Value.Description;
+            Task.FromResult(firestoreManager.SaveToFirestore($"users/{AuthManager.Instance.User.UserId}/players", currentPlayer.Key, currentPlayer.Value));
             return;
         }
-        if (currentPlayer.Happiness >= 100)
-        {
-            Debug.Log("Game Over - Player has died.");
-            currentPlayer.DeathId = "DE001";
-            DeathPanel.SetActive(true);
-            reasonDeath = "You laughed so hard at a joke that you simply evaporated into pure joy.";
-            return;
-        }
-        if (currentPlayer.Wealth >= 100)
-        {
-            Debug.Log("Game Over - Player has died.");
-            currentPlayer.DeathId = "DE001";
-            DeathPanel.SetActive(true);
-            reasonDeath = "You bought the entire planet, but now there’s nothing left to buy. You died of boredom.";
-            return;
-        }
+        return;
     }
     public void DeathButton()
     {   

@@ -40,12 +40,10 @@ public class UIManager : MonoBehaviour
     {
         if (LoadDataManager.Instance.loadedPlayer.Key != null)
         {
-            //ContinueButton.gameObject.SetActive(true);
             ContinueButton.interactable = true;
         }
         else
         {
-            //ContinueButton.gameObject.SetActive(false);
             ContinueButton.interactable = false;
         }
         loginUI.SetActive(false);

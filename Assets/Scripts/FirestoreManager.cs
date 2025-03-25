@@ -1,7 +1,10 @@
 ﻿using Firebase.Firestore;
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
+using System.Text;
 using System.Threading.Tasks;
+using UnityEditor;
 using UnityEngine;
 using static UnityEditor.Experimental.GraphView.GraphView;
 
@@ -41,6 +44,50 @@ public class FirestoreManager : MonoBehaviour
         {
             Debug.Log("Firestore is ready");
         }
+    }
+    public async Task<string> ToCSV()
+    {
+        var sb = new StringBuilder();
+        foreach (var property in typeof(Trait).GetProperties())
+        {
+            sb.Append(property.Name).Append(',');
+        }
+        await LoadCollection("traits", traits);
+        foreach (var trait in traits)
+        {
+            sb.Append('\n').Append(trait.Key.ToString()).Append(',').Append(trait.Value.ToString());
+        }
+        return sb.ToString();
+    }
+    public void SaveToFile()
+    {
+        // Use the CSV generation from before
+        var content = Task.FromResult(ToCSV());
+
+        // The target file path e.g.
+#if UNITY_EDITOR
+        var folder = Application.streamingAssetsPath;
+
+        if (!Directory.Exists(folder)) Directory.CreateDirectory(folder);
+#else
+    var folder = Application.persistentDataPath;
+#endif
+
+        var filePath = Path.Combine(folder, "export.csv");
+
+        using (var writer = new StreamWriter(filePath, false))
+        {
+            writer.Write(content);
+        }
+
+        // Or just
+        //File.WriteAllText(content);
+
+        Debug.Log($"CSV file written to \"{filePath}\"");
+
+#if UNITY_EDITOR
+        AssetDatabase.Refresh();
+#endif
     }
     public async Task LoadGameData()
     {
