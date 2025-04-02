@@ -8,7 +8,6 @@ using System.Threading.Tasks;
 [FirestoreData]
 public class Choice
 {
-    //public string ChoiceId { get; set; }
 
     [FirestoreProperty]
     public string Description { get; set; }

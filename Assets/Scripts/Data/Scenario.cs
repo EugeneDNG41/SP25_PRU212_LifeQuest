@@ -8,7 +8,6 @@ using Firebase.Firestore;
 [FirestoreData]
 public class Scenario
 {
-    //public string ScenarioId { get; set; }
 
     [FirestoreProperty]
     public string Description { get; set; }

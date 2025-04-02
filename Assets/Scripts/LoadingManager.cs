@@ -81,9 +81,9 @@ public class LoadingManager : MonoBehaviour
             await LoadCollection("stages", firestoreManager.stages);
         }
         UpdateProgress(++currentStep, totalSteps);
-        if (firestoreManager.statImpact.Count == 0)
+        if (firestoreManager.statImpacts.Count == 0)
         {
-            await LoadCollection("stat_impacts", firestoreManager.statImpact);
+            await LoadCollection("stat_impacts", firestoreManager.statImpacts);
         }
         UpdateProgress(++currentStep, totalSteps);
         if (firestoreManager.ageRanges.Count == 0)
@@ -148,8 +148,8 @@ public class LoadingManager : MonoBehaviour
 
                 foreach (var outcome in choice.Outcomes.Values)
                 {
-                    if (firestoreManager.statImpact.ContainsKey(outcome.ImpactId))
-                        outcome.Impact = firestoreManager.statImpact[outcome.ImpactId];
+                    if (firestoreManager.statImpacts.ContainsKey(outcome.ImpactId))
+                        outcome.Impact = firestoreManager.statImpacts[outcome.ImpactId];
 
                     if (outcome.ResultTraitId != null && firestoreManager.traits.ContainsKey(outcome.ResultTraitId))
                         outcome.ResultTrait = firestoreManager.traits[outcome.ResultTraitId];
@@ -161,8 +161,8 @@ public class LoadingManager : MonoBehaviour
         {
             foreach (var outcome in quiz.Outcomes.Values)
             {
-                if (firestoreManager.statImpact.ContainsKey(outcome.ImpactId))
-                    outcome.Impact = firestoreManager.statImpact[outcome.ImpactId];
+                if (firestoreManager.statImpacts.ContainsKey(outcome.ImpactId))
+                    outcome.Impact = firestoreManager.statImpacts[outcome.ImpactId];
                 if (outcome.ResultTraitId != null && firestoreManager.traits.ContainsKey(outcome.ResultTraitId))
                     outcome.ResultTrait = firestoreManager.traits[outcome.ResultTraitId];
             }

@@ -1,0 +1,7 @@
+StageID,Name,Description,AgeRangeID,MinAge,MaxAge
+ST0,"Toddler","A time of pure chaos, drool, and unexpected naps.","AGE1"
+ST1,"Child","The golden years of sugar highs and questionable decision-making.","AGE2"
+ST2,"Adolescent","Where bad haircuts and bad decisions go hand in hand.","AGE3"
+ST3,"Young Adult","You have freedom, responsibilities, and absolutely no idea what you're doing.","AGE4"
+ST4,"Middle Age","You finally have wisdom... and back pain to go with it.","AGE5"
+ST5,"Elder","You’ve seen it all, done it all, and now just want a nap.","AGE6"

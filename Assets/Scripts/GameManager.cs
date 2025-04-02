@@ -76,7 +76,7 @@ public class GameManager : MonoBehaviour
             DisplayScenario(scenario);
         } else
         {
-            currentPlayer = new KeyValuePair<string, Player>(GUID.Generate().ToString(), new Player());
+            currentPlayer = new KeyValuePair<string, Player>(System.Guid.NewGuid().ToString(), new Player());
             currentPlayer.Value.Sex = Random.Range(0, 1) > 0.5 ? "Male" : "Female";
             currentPlayer.Value.Name = GenerateRandomName();
             UpdateUI();

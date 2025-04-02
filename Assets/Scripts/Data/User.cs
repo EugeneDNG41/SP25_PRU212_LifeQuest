@@ -11,6 +11,6 @@ public class User
     public string Username { get; set; }
     [FirestoreProperty]
     public Dictionary<string, Player> Players { get; set; } = new();
-    [FirestoreProperty]
-    public Dictionary<string, UnlockedAchievement> UnlockedAchievements { get; set; } = new();
+    //[FirestoreProperty]
+    //public Dictionary<string, UnlockedAchievement> UnlockedAchievements { get; set; } = new();
 }

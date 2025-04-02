@@ -1,0 +1,4 @@
+UserID,Username,PlayerID,PlayerName,Age,Health,Happiness,Wealth,Sex,Status,DeathID,StageID,ScenarioID
+gFDOAZhpYNaMGblQ1i22Rv2iQf82,"test",583eeb525a4ed514e863358e1d5b11b9,"Michael Smith",9,50,100,50,"Female","","D021","ST1","SC014"
+jn4nbdJFarM4kej7hQcs9ffgcME2,"new",a2bc968c0f264ed4bbd9de42c58111e8,"Emma Brown",55,80,90,80,"Female","","None","ST4","SC089"
+jn4nbdJFarM4kej7hQcs9ffgcME2,"new",fb201f0dc618026459d7b295b77efd4f,"William Miller",2,50,70,60,"Female","","None","ST0","SC012"

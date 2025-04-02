@@ -1,0 +1,507 @@
+QuizID,QuizDescription,OutcomeID,OutcomeDescription,Impact,ResultTrait,QuestionID,QuestionDescription,AnswerID,AnswerDescription,IsCorrect
+QZ001,"A quiz on political concepts and government structure.",Failure,"Your entrance essay is just a collection of political memes. The admissions board is not impressed.","I06","None",,,,
+QZ001,"A quiz on political concepts and government structure.",Success,""You now start every argument with, ‘Well, technically…’"","I11","T017",,,,
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q1,"What is the main purpose of a constitution?",QZ001Q2A1,"To outline the fundamental principles of a government",TRUE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q1,"What is the main purpose of a constitution?",QZ001Q2A2,"To list the names of all past rulers",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q1,"What is the main purpose of a constitution?",QZ001Q2A3,"To provide daily laws for citizens",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q1,"What is the main purpose of a constitution?",QZ001Q2A4,"To determine who wins political debates",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q2,"Which political ideology advocates for minimal government intervention?",QZ001Q3A5,"Libertarianism",TRUE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q2,"Which political ideology advocates for minimal government intervention?",QZ001Q3A6,"Socialism",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q2,"Which political ideology advocates for minimal government intervention?",QZ001Q3A7,"Communism",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q2,"Which political ideology advocates for minimal government intervention?",QZ001Q3A8,"Monarchism",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q3,"What system does the U.S. use to elect its president?",QZ001Q4A10,"Popular Vote Only",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q3,"What system does the U.S. use to elect its president?",QZ001Q4A11,"Rock-Paper-Scissors",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q3,"What system does the U.S. use to elect its president?",QZ001Q4A12,"The Senate Picks One at Random",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q3,"What system does the U.S. use to elect its president?",QZ001Q4A9,"Electoral College",TRUE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q4,"What philosopher is often credited as the father of modern political science?",QZ001Q5A13,"Niccolò Machiavelli",TRUE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q4,"What philosopher is often credited as the father of modern political science?",QZ001Q5A14,"Socrates",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q4,"What philosopher is often credited as the father of modern political science?",QZ001Q5A15,"Karl Marx",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q4,"What philosopher is often credited as the father of modern political science?",QZ001Q5A16,"Sun Tzu",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q5,"What is the role of a lobbyist in politics?",QZ001Q6A17,"Influencing lawmakers on behalf of interest groups",TRUE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q5,"What is the role of a lobbyist in politics?",QZ001Q6A18,"Greeting people in hotel lobbies",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q5,"What is the role of a lobbyist in politics?",QZ001Q6A19,"Organizing protests",FALSE
+QZ001,"A quiz on political concepts and government structure.",,,,,QZ001Q5,"What is the role of a lobbyist in politics?",QZ001Q6A20,"Hosting political game shows",FALSE
+QZ002,"A quiz on fundamental economic concepts.",Failure,""You miscalculate basic supply and demand, suggesting gold should be cheaper than bread."","I07","None",,,,
+QZ002,"A quiz on fundamental economic concepts.",Success,"You can now explain inflation. Your bank account? Not so much.","I13","T018",,,,
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q1,"What is GDP?",QZ002Q2A1,""Gross Domestic Product, a measure of a country's economic performance"",TRUE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q1,"What is GDP?",QZ002Q2A2,"General Development Plan",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q1,"What is GDP?",QZ002Q2A3,"Government Debt Policy",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q1,"What is GDP?",QZ002Q2A4,"Global Demand Pricing",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q2,"What is inflation?",QZ002Q3A5,"The general increase in prices over time",TRUE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q2,"What is inflation?",QZ002Q3A6,"A sudden decrease in employment",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q2,"What is inflation?",QZ002Q3A7,"A government tax on imports",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q2,"What is inflation?",QZ002Q3A8,"The process of printing more money",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q3,"What does a central bank do?",QZ002Q4A10,"Manages stock markets",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q3,"What does a central bank do?",QZ002Q4A11,"Controls all government spending",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q3,"What does a central bank do?",QZ002Q4A12,"Collects taxes from businesses",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q3,"What does a central bank do?",QZ002Q4A9,"Regulates the money supply and interest rates",TRUE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q4,"What is opportunity cost?",QZ002Q5A13,"The loss of potential gain from choosing one option over another",TRUE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q4,"What is opportunity cost?",QZ002Q5A14,"The total cost of running a business",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q4,"What is opportunity cost?",QZ002Q5A15,"The cost of hiring employees",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q4,"What is opportunity cost?",QZ002Q5A16,"The cost of advertising a product",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q5,"What is a recession?",QZ002Q6A17,"A significant decline in economic activity",TRUE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q5,"What is a recession?",QZ002Q6A18,"A period of extreme economic growth",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q5,"What is a recession?",QZ002Q6A19,"A government budget plan",FALSE
+QZ002,"A quiz on fundamental economic concepts.",,,,,QZ002Q5,"What is a recession?",QZ002Q6A20,"A strategy for investing in stocks",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",Failure,"You mix up painkillers and vitamins during a practical exam.","I08","None",,,,
+QZ003,"A quiz on essential medical and biological knowledge.",Success,"You can now diagnose fictional characters. Your own health? Who knows.","I13","T019",,,,
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q1,"What is the function of the hippocampus?",QZ003Q2A1,"Memory and learning",TRUE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q1,"What is the function of the hippocampus?",QZ003Q2A2,"Controlling body temperature",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q1,"What is the function of the hippocampus?",QZ003Q2A3,"Regulating digestion",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q1,"What is the function of the hippocampus?",QZ003Q2A4,"Producing adrenaline",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q2,"What is the universal donor blood type?",QZ003Q3A5,"O-negative",TRUE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q2,"What is the universal donor blood type?",QZ003Q3A6,"AB-positive",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q2,"What is the universal donor blood type?",QZ003Q3A7,"A-positive",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q2,"What is the universal donor blood type?",QZ003Q3A8,"B-negative",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q3,"What does “CPR” stand for?",QZ003Q4A10,"Critical Patient Recovery",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q3,"What does “CPR” stand for?",QZ003Q4A11,"Complete Physical Restoration",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q3,"What does “CPR” stand for?",QZ003Q4A12,"Chest Pressure Revival",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q3,"What does “CPR” stand for?",QZ003Q4A9,"Cardiopulmonary Resuscitation",TRUE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q4,"What is the largest organ in the human body?",QZ003Q5A13,"Skin",TRUE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q4,"What is the largest organ in the human body?",QZ003Q5A14,"Liver",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q4,"What is the largest organ in the human body?",QZ003Q5A15,"Heart",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q4,"What is the largest organ in the human body?",QZ003Q5A16,"Lungs",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q5,"What is an EpiPen used for?",QZ003Q6A17,"Treating severe allergic reactions",TRUE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q5,"What is an EpiPen used for?",QZ003Q6A18,"Measuring blood sugar levels",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q5,"What is an EpiPen used for?",QZ003Q6A19,"Stopping nosebleeds",FALSE
+QZ003,"A quiz on essential medical and biological knowledge.",,,,,QZ003Q5,"What is an EpiPen used for?",QZ003Q6A20,"Writing down prescriptions",FALSE
+QZ004,"A quiz on photography concepts and techniques.",Failure,"You forget to remove the lens cap and wonder why all your photos are black.","I09","None",,,,
+QZ004,"A quiz on photography concepts and techniques.",Success,"You now take 100 photos just to pick one.","I14","T020",,,,
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q1,"What is the 'golden hour' in photography?",QZ004Q2A1,"The period shortly after sunrise or before sunset",TRUE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q1,"What is the 'golden hour' in photography?",QZ004Q2A2,"The time right before a storm",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q1,"What is the 'golden hour' in photography?",QZ004Q2A3,"The moment your camera battery dies",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q1,"What is the 'golden hour' in photography?",QZ004Q2A4,"Any time the sun is at its highest",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q2,"What does ISO control in photography?",QZ004Q3A5,"Light sensitivity",TRUE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q2,"What does ISO control in photography?",QZ004Q3A6,"Shutter speed",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q2,"What does ISO control in photography?",QZ004Q3A7,"Camera size",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q2,"What does ISO control in photography?",QZ004Q3A8,"Lens focus distance",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q3,"What is a prime lens?",QZ004Q4A10,"A lens with infinite zoom",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q3,"What is a prime lens?",QZ004Q4A11,"A lens only used in black-and-white photography",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q3,"What is a prime lens?",QZ004Q4A12,"A lens used only in film cameras",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q3,"What is a prime lens?",QZ004Q4A9,"A lens with a fixed focal length",TRUE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q4,"What does RAW format preserve?",QZ004Q5A13,"All uncompressed image data",TRUE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q4,"What does RAW format preserve?",QZ004Q5A14,"Only the colors in an image",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q4,"What does RAW format preserve?",QZ004Q5A15,"The exact angle of the shot",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q4,"What does RAW format preserve?",QZ004Q5A16,"The noise and grain in a photo",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q5,"What is bokeh in photography?",QZ004Q6A17,"The aesthetic blur in out-of-focus areas",TRUE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q5,"What is bokeh in photography?",QZ004Q6A18,"A type of vintage camera",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q5,"What is bokeh in photography?",QZ004Q6A19,"A brand of lenses",FALSE
+QZ004,"A quiz on photography concepts and techniques.",,,,,QZ004Q5,"What is bokeh in photography?",QZ004Q6A20,"A new photo editing app",FALSE
+QZ005,"A quiz on fundamental legal concepts.",Failure,"You cite fictional TV lawyers in your legal reasoning exam. Your application is swiftly denied.","I10","None",,,,
+QZ005,"A quiz on fundamental legal concepts.",Success,"You now correct people’s grammar like it’s a legal requirement.","I01","T021",,,,
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q1,"What is habeas corpus?",QZ005Q2A1,"The right to challenge unlawful detention",TRUE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q1,"What is habeas corpus?",QZ005Q2A2,"A fancy legal term for suing someone",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q1,"What is habeas corpus?",QZ005Q2A3,"A type of courtroom objection",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q1,"What is habeas corpus?",QZ005Q2A4,"A clause about jury duty",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q2,"What is the main purpose of contract law?",QZ005Q3A5,"To regulate legally binding agreements",TRUE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q2,"What is the main purpose of contract law?",QZ005Q3A6,"To make laws more complicated",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q2,"What is the main purpose of contract law?",QZ005Q3A7,"To provide loopholes in legal disputes",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q2,"What is the main purpose of contract law?",QZ005Q3A8,"To make people afraid of signing anything",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q3,"What is double jeopardy?",QZ005Q4A10,"A TV game show category",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q3,"What is double jeopardy?",QZ005Q4A11,"A lawyer’s worst nightmare",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q3,"What is double jeopardy?",QZ005Q4A12,"When you get two speeding tickets in one day",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q3,"What is double jeopardy?",QZ005Q4A9,"Being tried for the same crime twice",TRUE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q4,"What does 'pro bono' mean in legal work?",QZ005Q5A13,"Free legal services",TRUE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q4,"What does 'pro bono' mean in legal work?",QZ005Q5A14,"An expensive lawyer’s fee",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q4,"What does 'pro bono' mean in legal work?",QZ005Q5A15,"A term for courtroom seating",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q4,"What does 'pro bono' mean in legal work?",QZ005Q5A16,"A requirement for law students",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q5,"What does tort law deal with?",QZ005Q6A17,"Civil wrongs and damages",TRUE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q5,"What does tort law deal with?",QZ005Q6A18,"International treaties",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q5,"What does tort law deal with?",QZ005Q6A19,"Criminal punishments",FALSE
+QZ005,"A quiz on fundamental legal concepts.",,,,,QZ005Q5,"What does tort law deal with?",QZ005Q6A20,"The structure of a courtroom",FALSE
+QZ006,"A quiz on essential communication skills.",Failure,"Your admission interview is so awkward and incoherent that they assume you're speaking in code.","I11","None",,,,
+QZ006,"A quiz on essential communication skills.",Success,""You can now make any topic sound dramatic, even toast."","I02","T022",,,,
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q1,"What is the main purpose of communication?",QZ006Q2A1,"To share information and ideas",TRUE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q1,"What is the main purpose of communication?",QZ006Q2A2,"To win every argument",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q1,"What is the main purpose of communication?",QZ006Q2A3,"To avoid talking to people",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q1,"What is the main purpose of communication?",QZ006Q2A4,"To make others agree with you",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q2,"What is nonverbal communication?",QZ006Q3A5,"Expressing ideas without words",TRUE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q2,"What is nonverbal communication?",QZ006Q3A6,"Using only text messages",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q2,"What is nonverbal communication?",QZ006Q3A7,"Talking loudly for emphasis",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q2,"What is nonverbal communication?",QZ006Q3A8,"A secret language used by spies",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q3,"What does active listening involve?",QZ006Q4A10,"Waiting for your turn to speak",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q3,"What does active listening involve?",QZ006Q4A11,"Nodding while thinking about lunch",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q3,"What does active listening involve?",QZ006Q4A12,"Repeating what the speaker says word for word",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q3,"What does active listening involve?",QZ006Q4A9,"Giving full attention and responding thoughtfully",TRUE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q4,"What is the difference between verbal and written communication?",QZ006Q5A13,""Verbal is spoken, written is recorded"",TRUE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q4,"What is the difference between verbal and written communication?",QZ006Q5A14,""Verbal is always formal, written is not"",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q4,"What is the difference between verbal and written communication?",QZ006Q5A15,"Written communication is only used in business",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q4,"What is the difference between verbal and written communication?",QZ006Q5A16,"Verbal communication is always better",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q5,"What is the main goal of public speaking?",QZ006Q6A17,""To inform, persuade, or entertain an audience"",TRUE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q5,"What is the main goal of public speaking?",QZ006Q6A18,"To sound smart regardless of the topic",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q5,"What is the main goal of public speaking?",QZ006Q6A19,"To use as many big words as possible",FALSE
+QZ006,"A quiz on essential communication skills.",,,,,QZ006Q5,"What is the main goal of public speaking?",QZ006Q6A20,"To make the audience agree with you",FALSE
+QZ007,"A quiz on history and world events.",Failure,"You mix up Napoleon and Shakespeare in your exam. The result is not very amusing.","I12","None",,,,
+QZ007,"A quiz on history and world events.",Success,""You can name five wars off the top of your head, but forget where you put your keys."","I03","T023",,,,
+QZ007,"A quiz on history and world events.",,,,,QZ007Q1,"What was the primary cause of World War I?",QZ007Q2A1,"A complex web of alliances and tensions",TRUE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q1,"What was the primary cause of World War I?",QZ007Q2A2,"A disagreement over pizza toppings",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q1,"What was the primary cause of World War I?",QZ007Q2A3,"A single bad election",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q1,"What was the primary cause of World War I?",QZ007Q2A4,"The rise of the internet",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q2,"Who was the first President of the United States?",QZ007Q3A5,"George Washington",TRUE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q2,"Who was the first President of the United States?",QZ007Q3A6,"Abraham Lincoln",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q2,"Who was the first President of the United States?",QZ007Q3A7,"Thomas Jefferson",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q2,"Who was the first President of the United States?",QZ007Q3A8,"Alexander Hamilton",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q3,"What was the Renaissance?",QZ007Q4A10,"A medieval military strategy",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q3,"What was the Renaissance?",QZ007Q4A11,"The first global trade agreement",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q3,"What was the Renaissance?",QZ007Q4A12,"A type of ancient government",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q3,"What was the Renaissance?",QZ007Q4A9,"A cultural rebirth in Europe",TRUE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q4,"What was the purpose of the Great Wall of China?",QZ007Q5A13,"To protect against invasions",TRUE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q4,"What was the purpose of the Great Wall of China?",QZ007Q5A14,"To control trade routes",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q4,"What was the purpose of the Great Wall of China?",QZ007Q5A15,"To mark the borders of the empire",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q4,"What was the purpose of the Great Wall of China?",QZ007Q5A16,"To serve as a giant art project",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q5,"What event marked the start of the French Revolution?",QZ007Q6A17,"The Storming of the Bastille",TRUE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q5,"What event marked the start of the French Revolution?",QZ007Q6A18,"The signing of the Declaration of Independence",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q5,"What event marked the start of the French Revolution?",QZ007Q6A19,"The fall of the Roman Empire",FALSE
+QZ007,"A quiz on history and world events.",,,,,QZ007Q5,"What event marked the start of the French Revolution?",QZ007Q6A20,"The construction of the Eiffel Tower",FALSE
+QZ008,"A quiz on psychology and human behavior.",Failure,""You try to psychoanalyze your examiner, and they recommend you see a therapist."","I13","None",,,,
+QZ008,"A quiz on psychology and human behavior.",Success,"You now diagnose your pet’s behavior using Freudian theory.","I04","T024",,,,
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q1,"What is classical conditioning?",QZ008Q2A1,"Learning through association",TRUE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q1,"What is classical conditioning?",QZ008Q2A2,"Learning through trial and error",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q1,"What is classical conditioning?",QZ008Q2A3,"Learning by memorization",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q1,"What is classical conditioning?",QZ008Q2A4,"Learning through punishment",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q2,"What part of the brain controls emotions?",QZ008Q3A5,"The amygdala",TRUE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q2,"What part of the brain controls emotions?",QZ008Q3A6,"The frontal lobe",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q2,"What part of the brain controls emotions?",QZ008Q3A7,"The cerebellum",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q2,"What part of the brain controls emotions?",QZ008Q3A8,"The hippocampus",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q3,"What is cognitive dissonance?",QZ008Q4A10,"A rare brain disorder",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q3,"What is cognitive dissonance?",QZ008Q4A11,"A type of memory loss",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q3,"What is cognitive dissonance?",QZ008Q4A12,"The ability to read minds",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q3,"What is cognitive dissonance?",QZ008Q4A9,"The discomfort of holding conflicting beliefs",TRUE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q4,"What is the placebo effect?",QZ008Q5A13,"When a fake treatment causes real effects",TRUE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q4,"What is the placebo effect?",QZ008Q5A14,"A form of hypnosis",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q4,"What is the placebo effect?",QZ008Q5A15,"A memory-related disorder",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q4,"What is the placebo effect?",QZ008Q5A16,"The study of personality",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q5,"What is Maslow’s hierarchy of needs?",QZ008Q6A17,"A psychological theory about human motivation",TRUE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q5,"What is Maslow’s hierarchy of needs?",QZ008Q6A18,"A chart of personality types",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q5,"What is Maslow’s hierarchy of needs?",QZ008Q6A19,"A way to rank intelligence",FALSE
+QZ008,"A quiz on psychology and human behavior.",,,,,QZ008Q5,"What is Maslow’s hierarchy of needs?",QZ008Q6A20,"A technique for solving problems",FALSE
+QZ009,"A quiz on biology and life sciences.",Failure,"You fail to distinguish between mitosis and a midlife crisis in the written test.","I14","None",,,,
+QZ009,"A quiz on biology and life sciences.",Success,"You start using scientific names for common plants. Nobody asks.","I05","T025",,,,
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q1,"What is the powerhouse of the cell?",QZ009Q2A1,"The mitochondria",TRUE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q1,"What is the powerhouse of the cell?",QZ009Q2A2,"The nucleus",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q1,"What is the powerhouse of the cell?",QZ009Q2A3,"The ribosome",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q1,"What is the powerhouse of the cell?",QZ009Q2A4,"The cell membrane",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q2,"What process allows plants to make their own food?",QZ009Q3A5,"Photosynthesis",TRUE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q2,"What process allows plants to make their own food?",QZ009Q3A6,"Respiration",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q2,"What process allows plants to make their own food?",QZ009Q3A7,"Fermentation",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q2,"What process allows plants to make their own food?",QZ009Q3A8,"Digestion",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q3,"What is DNA?",QZ009Q4A10,"A type of bacteria",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q3,"What is DNA?",QZ009Q4A11,"A new social media app",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q3,"What is DNA?",QZ009Q4A12,"A part of the nervous system",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q3,"What is DNA?",QZ009Q4A9,"The molecule that carries genetic information",TRUE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q4,"What is the function of the heart?",QZ009Q5A13,"To pump blood throughout the body",TRUE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q4,"What is the function of the heart?",QZ009Q5A14,"To process emotions",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q4,"What is the function of the heart?",QZ009Q5A15,"To regulate body temperature",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q4,"What is the function of the heart?",QZ009Q5A16,"To store oxygen",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q5,"What is the main purpose of the respiratory system?",QZ009Q6A17,"To exchange oxygen and carbon dioxide",TRUE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q5,"What is the main purpose of the respiratory system?",QZ009Q6A18,"To circulate nutrients",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q5,"What is the main purpose of the respiratory system?",QZ009Q6A19,"To break down food",FALSE
+QZ009,"A quiz on biology and life sciences.",,,,,QZ009Q5,"What is the main purpose of the respiratory system?",QZ009Q6A20,"To produce energy",FALSE
+QZ010,"A quiz on public relations and branding.",Failure,"You try to spin your failing grades as “an avant-garde learning experience.” It doesn’t work.","I01","None",,,,
+QZ010,"A quiz on public relations and branding.",Success,"You now frame all your personal failures as ‘learning experiences.’","I06","T026",,,,
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q1,"What is the main goal of public relations?",QZ010Q2A1,"Managing a company’s public image",TRUE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q1,"What is the main goal of public relations?",QZ010Q2A2,"Making advertisements",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q1,"What is the main goal of public relations?",QZ010Q2A3,"Writing movie scripts",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q1,"What is the main goal of public relations?",QZ010Q2A4,"Controlling the stock market",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q2,"What is a press release?",QZ010Q3A5,"An official statement given to the media",TRUE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q2,"What is a press release?",QZ010Q3A6,"A printed newspaper",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q2,"What is a press release?",QZ010Q3A7,"A form of social media marketing",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q2,"What is a press release?",QZ010Q3A8,"A contract for journalists",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q3,"What is crisis communication?",QZ010Q4A10,"Writing positive reviews online",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q3,"What is crisis communication?",QZ010Q4A11,"Avoiding bad press entirely",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q3,"What is crisis communication?",QZ010Q4A12,"The study of social media trends",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q3,"What is crisis communication?",QZ010Q4A9,"Handling public relations disasters",TRUE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q4,"What is branding?",QZ010Q5A13,"Creating a unique identity for a company",TRUE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q4,"What is branding?",QZ010Q5A14,"Printing company logos",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q4,"What is branding?",QZ010Q5A15,"A marketing gimmick",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q4,"What is branding?",QZ010Q5A16,"A legal trademark process",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q5,"What is social media engagement?",QZ010Q6A17,"Interacting with followers online",TRUE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q5,"What is social media engagement?",QZ010Q6A18,"Posting as many ads as possible",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q5,"What is social media engagement?",QZ010Q6A19,"Controlling online discussions",FALSE
+QZ010,"A quiz on public relations and branding.",,,,,QZ010Q5,"What is social media engagement?",QZ010Q6A20,"Blocking negative comments",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",Failure,"You get caught cheating on the test and become the subject of a case study.","I02","None",,,,
+QZ011,"A quiz on philosophy and critical thinking.",Success,"You lose hours debating whether free will exists.","I07","T027",,,,
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q1,"Who is considered the father of Western philosophy?",QZ011Q2A1,"Socrates",TRUE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q1,"Who is considered the father of Western philosophy?",QZ011Q2A2,"Aristotle",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q1,"Who is considered the father of Western philosophy?",QZ011Q2A3,"Descartes",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q1,"Who is considered the father of Western philosophy?",QZ011Q2A4,"Nietzsche",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q2,"What is the central question of ethics?",QZ011Q3A5,"What is the right thing to do?",TRUE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q2,"What is the central question of ethics?",QZ011Q3A6,"How can I win arguments?",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q2,"What is the central question of ethics?",QZ011Q3A7,"Why do people disagree?",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q2,"What is the central question of ethics?",QZ011Q3A8,"What is the meaning of life?",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q3,""What does 'Cogito, ergo sum' mean?"",QZ011Q4A10,"Life is an illusion",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q3,""What does 'Cogito, ergo sum' mean?"",QZ011Q4A11,"Knowledge is power",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q3,""What does 'Cogito, ergo sum' mean?"",QZ011Q4A12,"Seeing is believing",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q3,""What does 'Cogito, ergo sum' mean?"",QZ011Q4A9,""I think, therefore I am"",TRUE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q4,"What is the main idea of existentialism?",QZ011Q5A13,"Individuals create their own meaning in life",TRUE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q4,"What is the main idea of existentialism?",QZ011Q5A14,"Everything happens for a reason",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q4,"What is the main idea of existentialism?",QZ011Q5A15,"Reality is predetermined",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q4,"What is the main idea of existentialism?",QZ011Q5A16,"Happiness is the ultimate goal",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q5,"What is a logical fallacy?",QZ011Q6A17,"A flaw in reasoning",TRUE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q5,"What is a logical fallacy?",QZ011Q6A18,"A paradox that cannot be solved",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q5,"What is a logical fallacy?",QZ011Q6A19,"A type of philosophy",FALSE
+QZ011,"A quiz on philosophy and critical thinking.",,,,,QZ011Q5,"What is a logical fallacy?",QZ011Q6A20,"A complicated philosophical theory",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",Failure,"You fail the class and get mistaken for a suspect in a mock crime scene.","I03","None",,,,
+QZ012,"A quiz on criminology and forensic psychology.",Success,"Your internet search history is now legally questionable.","I08","T028",,,,
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q1,"What does criminology study?",QZ012Q2A1,""The causes, effects, and prevention of crime"",TRUE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q1,"What does criminology study?",QZ012Q2A2,"How to commit the perfect crime",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q1,"What does criminology study?",QZ012Q2A3,"The history of law enforcement",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q1,"What does criminology study?",QZ012Q2A4,"Crime scene investigation techniques",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q2,"What is a victimless crime?",QZ012Q3A5,"A crime where no direct victim is harmed",TRUE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q2,"What is a victimless crime?",QZ012Q3A6,"A crime with an unknown suspect",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q2,"What is a victimless crime?",QZ012Q3A7,"A crime with multiple perpetrators",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q2,"What is a victimless crime?",QZ012Q3A8,"A crime that is not legally punishable",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q3,"What is the broken windows theory?",QZ012Q4A10,"Crime rates increase with population growth",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q3,"What is the broken windows theory?",QZ012Q4A11,"Criminal behavior is inherited",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q3,"What is the broken windows theory?",QZ012Q4A12,"People commit crimes for attention",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q3,"What is the broken windows theory?",QZ012Q4A9,"Visible signs of disorder encourage more crime",TRUE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q4,"What is recidivism?",QZ012Q5A13,"The tendency of criminals to reoffend",TRUE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q4,"What is recidivism?",QZ012Q5A14,"The process of criminal rehabilitation",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q4,"What is recidivism?",QZ012Q5A15,"A psychological disorder",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q4,"What is recidivism?",QZ012Q5A16,"A method of forensic analysis",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q5,"What is the role of forensic psychology?",QZ012Q6A17,"Understanding criminal behavior",TRUE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q5,"What is the role of forensic psychology?",QZ012Q6A18,"Collecting physical evidence",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q5,"What is the role of forensic psychology?",QZ012Q6A19,"Conducting lie detector tests",FALSE
+QZ012,"A quiz on criminology and forensic psychology.",,,,,QZ012Q5,"What is the role of forensic psychology?",QZ012Q6A20,"Defending suspects in court",FALSE
+QZ013,"A quiz on business and economics fundamentals.",Failure,"You try to bribe the examiner with Monopoly money. They don't find it funny.","I04","None",,,,
+QZ013,"A quiz on business and economics fundamentals.",Success,"You now use ‘synergy’ unironically.","I09","T029",,,,
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q1,"What is the basic principle of supply and demand?",QZ013Q2A1,"Prices go up when demand is high and supply is low",TRUE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q1,"What is the basic principle of supply and demand?",QZ013Q2A2,"Prices drop when demand increases",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q1,"What is the basic principle of supply and demand?",QZ013Q2A3,"Businesses control supply to set any price they want",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q1,"What is the basic principle of supply and demand?",QZ013Q2A4,"Consumers have no impact on the economy",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q2,"What is a business model?",QZ013Q3A5,"A plan for how a company makes money",TRUE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q2,"What is a business model?",QZ013Q3A6,"A famous entrepreneur",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q2,"What is a business model?",QZ013Q3A7,"A type of stock market strategy",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q2,"What is a business model?",QZ013Q3A8,"A government regulation",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q3,"What is an entrepreneur?",QZ013Q4A10,"A high-ranking employee",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q3,"What is an entrepreneur?",QZ013Q4A11,"A person who only invests in companies",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q3,"What is an entrepreneur?",QZ013Q4A12,"A government official who regulates businesses",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q3,"What is an entrepreneur?",QZ013Q4A9,"Someone who starts and runs a business",TRUE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q4,"What is the purpose of marketing?",QZ013Q5A13,"To attract and retain customers",TRUE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q4,"What is the purpose of marketing?",QZ013Q5A14,"To make the company look cool",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q4,"What is the purpose of marketing?",QZ013Q5A15,"To lower prices",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q4,"What is the purpose of marketing?",QZ013Q5A16,"To increase stock value",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q5,"What is a monopoly in business?",QZ013Q6A17,"A single company dominating an entire industry",TRUE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q5,"What is a monopoly in business?",QZ013Q6A18,"A small business with no competitors",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q5,"What is a monopoly in business?",QZ013Q6A19,"A company that only sells one product",FALSE
+QZ013,"A quiz on business and economics fundamentals.",,,,,QZ013Q5,"What is a monopoly in business?",QZ013Q6A20,"A financial strategy used by banks",FALSE
+QZ014,"A quiz on programming and computer science.",Failure,"You fail your entrance exam because you accidentally deleted your entire program.","I05","None",,,,
+QZ014,"A quiz on programming and computer science.",Success,"Your friends now expect you to fix their WiFi.","I10","T030",,,,
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q1,"What does HTML stand for?",QZ014Q2A1,"HyperText Markup Language",TRUE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q1,"What does HTML stand for?",QZ014Q2A2,"High-Tech Machine Learning",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q1,"What does HTML stand for?",QZ014Q2A3,"Home Technology Main Logic",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q1,"What does HTML stand for?",QZ014Q2A4,"Hyper Tech Memory Locator",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q2,"What is Big O notation used for?",QZ014Q3A5,"Describing algorithm efficiency",TRUE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q2,"What is Big O notation used for?",QZ014Q3A6,"Rating a computer's processing power",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q2,"What is Big O notation used for?",QZ014Q3A7,"Measuring screen resolution",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q2,"What is Big O notation used for?",QZ014Q3A8,"Naming new programming languages",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q3,"What is a compiler?",QZ014Q4A10,"A device that stores computer memory",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q3,"What is a compiler?",QZ014Q4A11,"A new AI assistant",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q3,"What is a compiler?",QZ014Q4A12,"A type of malware",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q3,"What is a compiler?",QZ014Q4A9,"A program that translates code into machine language",TRUE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q4,"What does SQL stand for?",QZ014Q5A13,"Structured Query Language",TRUE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q4,"What does SQL stand for?",QZ014Q5A14,"Super Quick Load",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q4,"What does SQL stand for?",QZ014Q5A15,"System Quality Logic",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q4,"What does SQL stand for?",QZ014Q5A16,"Secure Quantum Library",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q5,"What is recursion in programming?",QZ014Q6A17,"A function that calls itself",TRUE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q5,"What is recursion in programming?",QZ014Q6A18,"A type of infinite loop",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q5,"What is recursion in programming?",QZ014Q6A19,"A memory storage method",FALSE
+QZ014,"A quiz on programming and computer science.",,,,,QZ014Q5,"What is recursion in programming?",QZ014Q6A20,"A hidden debugging tool",FALSE
+QZ015,"A quiz on media literacy and journalism.",Failure,"You analyze a meme so hard that it stops being funny.","I06","None",,,,
+QZ015,"A quiz on media literacy and journalism.",Success,"You start seeing hidden symbolism in cat videos.","I11","T031",,,,
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q1,"What is media literacy?",QZ015Q2A1,"The ability to critically analyze media content",TRUE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q1,"What is media literacy?",QZ015Q2A2,"The ability to read books",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q1,"What is media literacy?",QZ015Q2A3,"The study of ancient manuscripts",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q1,"What is media literacy?",QZ015Q2A4,"The process of creating TV shows",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q2,"What is the role of a journalist?",QZ015Q3A5,"To report facts and inform the public",TRUE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q2,"What is the role of a journalist?",QZ015Q3A6,"To entertain audiences",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q2,"What is the role of a journalist?",QZ015Q3A7,"To promote government policies",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q2,"What is the role of a journalist?",QZ015Q3A8,"To create advertisements",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q3,"What is the difference between traditional and digital media?",QZ015Q4A10,"Traditional media is always accurate",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q3,"What is the difference between traditional and digital media?",QZ015Q4A11,"Digital media requires government approval",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q3,"What is the difference between traditional and digital media?",QZ015Q4A12,"Digital media refers only to social media",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q3,"What is the difference between traditional and digital media?",QZ015Q4A9,"Traditional media is physical; digital media is online",TRUE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q4,"What is the main function of advertising?",QZ015Q5A13,"To persuade consumers to buy a product",TRUE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q4,"What is the main function of advertising?",QZ015Q5A14,"To entertain viewers",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q4,"What is the main function of advertising?",QZ015Q5A15,"To create viral memes",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q4,"What is the main function of advertising?",QZ015Q5A16,"To report news stories",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q5,"What is the term for hidden messages in media content?",QZ015Q6A17,"Subliminal messaging",TRUE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q5,"What is the term for hidden messages in media content?",QZ015Q6A18,"Clickbait",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q5,"What is the term for hidden messages in media content?",QZ015Q6A19,"Fake news",FALSE
+QZ015,"A quiz on media literacy and journalism.",,,,,QZ015Q5,"What is the term for hidden messages in media content?",QZ015Q6A20,"Sponsored content",FALSE
+QZ016,"A quiz on art history and painting techniques.",Failure,"You submit a stick-figure drawing for your portfolio review. The judges think it's a prank.","I07","None",,,,
+QZ016,"A quiz on art history and painting techniques.",Success,"Your portfolio consists mostly of half-finished sketches and ‘experimental’ pieces.","I12","T032",,,,
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q1,"What is chiaroscuro in painting?",QZ016Q2A1,"The use of strong contrasts between light and dark",TRUE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q1,"What is chiaroscuro in painting?",QZ016Q2A2,"A type of marble used in sculptures",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q1,"What is chiaroscuro in painting?",QZ016Q2A3,"A famous Italian dish",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q1,"What is chiaroscuro in painting?",QZ016Q2A4,"A style of abstract splatter painting",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q2,"Who painted the Mona Lisa?",QZ016Q3A5,"Leonardo da Vinci",TRUE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q2,"Who painted the Mona Lisa?",QZ016Q3A6,"Pablo Picasso",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q2,"Who painted the Mona Lisa?",QZ016Q3A7,"Vincent van Gogh",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q2,"Who painted the Mona Lisa?",QZ016Q3A8,"Michelangelo",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q3,"What is Dadaism?",QZ016Q4A10,"A term for ancient cave paintings",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q3,"What is Dadaism?",QZ016Q4A11,"A technique in modern architecture",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q3,"What is Dadaism?",QZ016Q4A12,"The study of fatherhood in literature",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q3,"What is Dadaism?",QZ016Q4A9,"An absurdist art movement",TRUE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q4,"What is the difference between oil and watercolor painting?",QZ016Q5A13,"Oil paint takes longer to dry and is more vibrant",TRUE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q4,"What is the difference between oil and watercolor painting?",QZ016Q5A14,""Watercolor is for professionals, oil is for kids"",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q4,"What is the difference between oil and watercolor painting?",QZ016Q5A15,"They are the same thing",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q4,"What is the difference between oil and watercolor painting?",QZ016Q5A16,"Oil paintings must always be black and white",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q5,"Who is considered the father of modern sculpture?",QZ016Q6A17,"Auguste Rodin",TRUE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q5,"Who is considered the father of modern sculpture?",QZ016Q6A18,"Andy Warhol",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q5,"Who is considered the father of modern sculpture?",QZ016Q6A19,"Claude Monet",FALSE
+QZ016,"A quiz on art history and painting techniques.",,,,,QZ016Q5,"Who is considered the father of modern sculpture?",QZ016Q6A20,"Jackson Pollock",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",Failure,"You write a compelling novel for your entrance test but forget to proofread. The typoes r unforegiveable.","I08","None",,,,
+QZ017,"A quiz on literary concepts and storytelling.",Success,"You rewrite text messages five times before sending them.","I13","T033",,,,
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q1,"What is a protagonist?",QZ017Q2A1,"The main character of a story",TRUE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q1,"What is a protagonist?",QZ017Q2A2,"A minor character",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q1,"What is a protagonist?",QZ017Q2A3,"The person who tells the story",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q1,"What is a protagonist?",QZ017Q2A4,"A type of literary device",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q2,"What is a metaphor?",QZ017Q3A5,"A figure of speech comparing two unrelated things",TRUE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q2,"What is a metaphor?",QZ017Q3A6,"A dramatic plot twist",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q2,"What is a metaphor?",QZ017Q3A7,"A type of poetic structure",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q2,"What is a metaphor?",QZ017Q3A8,"A form of storytelling",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q3,"What is the purpose of editing?",QZ017Q4A10,"To make a story longer",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q3,"What is the purpose of editing?",QZ017Q4A11,"To add random words",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q3,"What is the purpose of editing?",QZ017Q4A12,"To change the genre of a story",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q3,"What is the purpose of editing?",QZ017Q4A9,"To improve clarity and coherence",TRUE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q4,""What is 'show, don’t tell' in writing?"",QZ017Q5A13,"Describing actions instead of explaining emotions",TRUE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q4,""What is 'show, don’t tell' in writing?"",QZ017Q5A14,"Using more words for dramatic effect",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q4,""What is 'show, don’t tell' in writing?"",QZ017Q5A15,"Adding unnecessary details",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q4,""What is 'show, don’t tell' in writing?"",QZ017Q5A16,"Avoiding dialogue in stories",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q5,"What is the climax of a story?",QZ017Q6A17,"The highest point of tension in a plot",TRUE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q5,"What is the climax of a story?",QZ017Q6A18,"The introduction of characters",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q5,"What is the climax of a story?",QZ017Q6A19,"A random subplot",FALSE
+QZ017,"A quiz on literary concepts and storytelling.",,,,,QZ017Q5,"What is the climax of a story?",QZ017Q6A20,"The ending of a story",FALSE
+QZ018,"A quiz on sociology and social structures.",Failure,"Your exam answers make the board question society itself. They advise you to 'observe life' before reapplying.","I09","None",,,,
+QZ018,"A quiz on sociology and social structures.",Success,"You are now fluent in analyzing society—and awkward family dynamics.","I14","T034",,,,
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q1,"Who coined ‘sociology’?",QZ018Q2A1,"Auguste Comte",TRUE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q1,"Who coined ‘sociology’?",QZ018Q2A2,"Karl Marx",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q1,"Who coined ‘sociology’?",QZ018Q2A3,"Emile Durkheim",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q1,"Who coined ‘sociology’?",QZ018Q2A4,"Michel Foucault",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q2,"What is the study of small-group interactions called?",QZ018Q3A5,"Microsociology",TRUE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q2,"What is the study of small-group interactions called?",QZ018Q3A6,"Macrosociology",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q2,"What is the study of small-group interactions called?",QZ018Q3A7,"Functionalism",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q2,"What is the study of small-group interactions called?",QZ018Q3A8,"Conflict Theory",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q3,"A person’s social position is called?",QZ018Q4A10,"Role",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q3,"A person’s social position is called?",QZ018Q4A11,"Norm",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q3,"A person’s social position is called?",QZ018Q4A12,"Institution",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q3,"A person’s social position is called?",QZ018Q4A9,"Status",TRUE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q4,"Expectations for a social position are called?",QZ018Q5A13,"Role",TRUE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q4,"Expectations for a social position are called?",QZ018Q5A14,"Status",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q4,"Expectations for a social position are called?",QZ018Q5A15,"Identity",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q4,"Expectations for a social position are called?",QZ018Q5A16,"Hierarchy",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q5,"What is the process of learning cultural norms called?",QZ018Q6A17,"Socialization",TRUE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q5,"What is the process of learning cultural norms called?",QZ018Q6A18,"Institutionalization",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q5,"What is the process of learning cultural norms called?",QZ018Q6A19,"Assimilation",FALSE
+QZ018,"A quiz on sociology and social structures.",,,,,QZ018Q5,"What is the process of learning cultural norms called?",QZ018Q6A20,"Stratification",FALSE
+QZ019,"A quiz on freelancing and self-employment.",Failure,""Your clients never pay you, and you end up freelancing for exposure."","I10","None",,,,
+QZ019,"A quiz on freelancing and self-employment.",Success,""Your boss is terrible. Oh wait, that’s you."","I01","T035",,,,
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q1,"What is freelancing?",QZ019Q2A1,"Working independently on contracts instead of being employed",TRUE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q1,"What is freelancing?",QZ019Q2A2,"A job where you don’t have to work",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q1,"What is freelancing?",QZ019Q2A3,"A government-subsidized career",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q1,"What is freelancing?",QZ019Q2A4,"A company that hires only remote workers",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q2,"What is a portfolio?",QZ019Q3A5,"A collection of work samples",TRUE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q2,"What is a portfolio?",QZ019Q3A6,"A type of investment",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q2,"What is a portfolio?",QZ019Q3A7,"A list of job applications",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q2,"What is a portfolio?",QZ019Q3A8,"A freelance networking group",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q3,"What is a common challenge for freelancers?",QZ019Q4A10,"No need to work at all",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q3,"What is a common challenge for freelancers?",QZ019Q4A11,"Guaranteed full-time benefits",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q3,"What is a common challenge for freelancers?",QZ019Q4A12,"Getting promoted by a boss",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q3,"What is a common challenge for freelancers?",QZ019Q4A9,"Inconsistent income",TRUE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q4,"What is an invoice?",QZ019Q5A13,"A bill sent to a client for payment",TRUE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q4,"What is an invoice?",QZ019Q5A14,"A type of job contract",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q4,"What is an invoice?",QZ019Q5A15,"A freelance job listing",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q4,"What is an invoice?",QZ019Q5A16,"A subscription to business tools",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q5,"What is an essential skill for freelancers?",QZ019Q6A17,"Time management",TRUE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q5,"What is an essential skill for freelancers?",QZ019Q6A18,"Knowing how to use a fax machine",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q5,"What is an essential skill for freelancers?",QZ019Q6A19,"Having a personal assistant",FALSE
+QZ019,"A quiz on freelancing and self-employment.",,,,,QZ019Q5,"What is an essential skill for freelancers?",QZ019Q6A20,"Wearing a suit to Zoom meetings",FALSE
+QZ020,"A quiz on business and corporate strategies.",Failure,"You fail so badly that your family replaces you with a distant cousin.","I11","None",,,,
+QZ020,"A quiz on business and corporate strategies.",Success,"Your business card says ‘visionary.’ You haven’t done anything yet.","I02","T036",,,,
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q1,"A hostile takeover occurs when...",QZ020Q2A1,"One company forcibly acquires another against its will",TRUE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q1,"A hostile takeover occurs when...",QZ020Q2A2,"A company hires an angry new CEO",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q1,"A hostile takeover occurs when...",QZ020Q2A3,"Employees go on strike demanding better pay",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q1,"A hostile takeover occurs when...",QZ020Q2A4,"A board meeting turns into a wrestling match",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q2,"What is the primary goal of a publicly traded corporation?",QZ020Q3A5,"Maximize shareholder value",TRUE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q2,"What is the primary goal of a publicly traded corporation?",QZ020Q3A6,"Make the CEO as rich as possible",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q2,"What is the primary goal of a publicly traded corporation?",QZ020Q3A7,"Keep employees happy at any cost",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q2,"What is the primary goal of a publicly traded corporation?",QZ020Q3A8,"Produce viral marketing campaigns",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q3,""In business, what does 'diversification' mean?"",QZ020Q4A10,"Hiring people with different opinions",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q3,""In business, what does 'diversification' mean?"",QZ020Q4A11,"Changing the company logo frequently",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q3,""In business, what does 'diversification' mean?"",QZ020Q4A12,"Using multiple fonts in presentations",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q3,""In business, what does 'diversification' mean?"",QZ020Q4A9,"Expanding into different industries or markets",TRUE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q4,"What is an IPO?",QZ020Q5A13,""Initial Public Offering, when a company sells shares to the public for the first time"",TRUE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q4,"What is an IPO?",QZ020Q5A14,""International Profit Optimization, a tax evasion technique"",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q4,"What is an IPO?",QZ020Q5A15,""Investment Portfolio Order, a stock buying strategy"",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q4,"What is an IPO?",QZ020Q5A16,""Insider Private Ownership, when a company stays secretive"",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q5,"What is the Pareto Principle in business?",QZ020Q6A17,"80% of results come from 20% of the effort",TRUE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q5,"What is the Pareto Principle in business?",QZ020Q6A18,"50% of revenue comes from 50% of customers",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q5,"What is the Pareto Principle in business?",QZ020Q6A19,"The first 10 years of business determine success",FALSE
+QZ020,"A quiz on business and corporate strategies.",,,,,QZ020Q5,"What is the Pareto Principle in business?",QZ020Q6A20,"Always hire someone named Pareto to manage profits",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",Failure,"Your entrance project is a plant that you forgot to water. It arrives dead.","I12","None",,,,
+QZ021,"A quiz on agriculture and sustainable farming.",Success,"You now talk passionately about compost.","I03","T037",,,,
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q1,"What is crop rotation?",QZ021Q2A1,"The practice of growing different crops in the same field to maintain soil health",TRUE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q1,"What is crop rotation?",QZ021Q2A2,"Spinning crops in circles for even growth",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q1,"What is crop rotation?",QZ021Q2A3,"A method of increasing pest populations",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q1,"What is crop rotation?",QZ021Q2A4,"A type of modern irrigation",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q2,"What is the purpose of fertilizers?",QZ021Q3A5,"To provide essential nutrients for plant growth",TRUE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q2,"What is the purpose of fertilizers?",QZ021Q3A6,"To eliminate weeds",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q2,"What is the purpose of fertilizers?",QZ021Q3A7,"To make plants grow instantly",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q2,"What is the purpose of fertilizers?",QZ021Q3A8,"To attract more insects",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q3,"What is the main benefit of organic farming?",QZ021Q4A10,"Guarantees larger crop yields",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q3,"What is the main benefit of organic farming?",QZ021Q4A11,"Requires no maintenance",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q3,"What is the main benefit of organic farming?",QZ021Q4A12,"Uses only genetically modified plants",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q3,"What is the main benefit of organic farming?",QZ021Q4A9,"Reduces synthetic chemicals and promotes environmental sustainability",TRUE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q4,"What is hydroponics?",QZ021Q5A13,"Growing plants without soil",TRUE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q4,"What is hydroponics?",QZ021Q5A14,"A new type of crop pest",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q4,"What is hydroponics?",QZ021Q5A15,"A traditional irrigation method",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q4,"What is hydroponics?",QZ021Q5A16,"A fertilizer brand",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q5,"What is the impact of overgrazing?",QZ021Q6A17,"Soil degradation and desertification",TRUE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q5,"What is the impact of overgrazing?",QZ021Q6A18,"Improved pasture quality",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q5,"What is the impact of overgrazing?",QZ021Q6A19,"Increased crop yields",FALSE
+QZ021,"A quiz on agriculture and sustainable farming.",,,,,QZ021Q5,"What is the impact of overgrazing?",QZ021Q6A20,"More sustainable livestock farming",FALSE
+QZ022,"A quiz on education and teaching methods.",Failure,"Your sample lesson is so boring that even the examiners fall asleep.","I13","None",,,,
+QZ022,"A quiz on education and teaching methods.",Success,"You gain patience. Lots of it.","I04","T038",,,,
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q1,"What is pedagogy?",QZ022Q2A1,"The method and practice of teaching",TRUE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q1,"What is pedagogy?",QZ022Q2A2,"The study of ancient civilizations",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q1,"What is pedagogy?",QZ022Q2A3,"A new learning app",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q1,"What is pedagogy?",QZ022Q2A4,"A psychological disorder",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q2,"What is the importance of differentiated instruction?",QZ022Q3A5,"It tailors teaching to individual student needs",TRUE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q2,"What is the importance of differentiated instruction?",QZ022Q3A6,"It ensures all students learn the same way",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q2,"What is the importance of differentiated instruction?",QZ022Q3A7,"It makes teaching easier",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q2,"What is the importance of differentiated instruction?",QZ022Q3A8,"It replaces traditional grading",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q3,"What is formative assessment?",QZ022Q4A10,"A final exam",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q3,"What is formative assessment?",QZ022Q4A11,"A way to rank students",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q3,"What is formative assessment?",QZ022Q4A12,"A type of standardized test",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q3,"What is formative assessment?",QZ022Q4A9,"A method to monitor student learning and provide feedback",TRUE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q4,"What is classroom management?",QZ022Q5A13,"Strategies used to maintain an effective learning environment",TRUE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q4,"What is classroom management?",QZ022Q5A14,"The process of building classrooms",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q4,"What is classroom management?",QZ022Q5A15,"The way teachers schedule lessons",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q4,"What is classroom management?",QZ022Q5A16,"A software for grading students",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q5,"What is the main purpose of early childhood education?",QZ022Q6A17,"To foster cognitive and social development",TRUE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q5,"What is the main purpose of early childhood education?",QZ022Q6A18,"To prepare children for exams",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q5,"What is the main purpose of early childhood education?",QZ022Q6A19,"To keep kids occupied",FALSE
+QZ022,"A quiz on education and teaching methods.",,,,,QZ022Q5,"What is the main purpose of early childhood education?",QZ022Q6A20,"To train them for the workforce early",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",Failure,""Your first project collapses, and your master suggests you try a desk job instead."","I14","None",,,,
+QZ023,"A quiz on craftsmanship and apprenticeships.",Success,"You gain respect for handmade things. And splinters.","I05","T039",,,,
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q1,"What is an apprenticeship?",QZ023Q2A1,"A system of training under an expert in a trade or craft",TRUE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q1,"What is an apprenticeship?",QZ023Q2A2,"A type of job interview",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q1,"What is an apprenticeship?",QZ023Q2A3,"A government business program",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q1,"What is an apprenticeship?",QZ023Q2A4,"A method of online learning",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q2,"What is the importance of hand tools in craftsmanship?",QZ023Q3A5,""They allow precise, hands-on work"",TRUE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q2,"What is the importance of hand tools in craftsmanship?",QZ023Q3A6,"They are just for decoration",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q2,"What is the importance of hand tools in craftsmanship?",QZ023Q3A7,"They are replaced entirely by machines",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q2,"What is the importance of hand tools in craftsmanship?",QZ023Q3A8,"They increase production speed without skill",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q3,"What is the role of a master in an apprenticeship?",QZ023Q4A10,"To handle paperwork",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q3,"What is the role of a master in an apprenticeship?",QZ023Q4A11,"To do all the work while the apprentice watches",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q3,"What is the role of a master in an apprenticeship?",QZ023Q4A12,"To approve completed projects",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q3,"What is the role of a master in an apprenticeship?",QZ023Q4A9,"To train and mentor the apprentice",TRUE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q4,"Why is material selection important in craftsmanship?",QZ023Q5A13,""It affects the quality, durability, and aesthetics of the final product"",TRUE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q4,"Why is material selection important in craftsmanship?",QZ023Q5A14,"Any material works as long as it looks nice",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q4,"Why is material selection important in craftsmanship?",QZ023Q5A15,"The customer never notices material quality",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q4,"Why is material selection important in craftsmanship?",QZ023Q5A16,"It's only important in mass production",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q5,"What is the key to mastering a craft?",QZ023Q6A17,""Practice, patience, and attention to detail"",TRUE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q5,"What is the key to mastering a craft?",QZ023Q6A18,"Watching tutorial videos",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q5,"What is the key to mastering a craft?",QZ023Q6A19,"Taking shortcuts to finish quickly",FALSE
+QZ023,"A quiz on craftsmanship and apprenticeships.",,,,,QZ023Q5,"What is the key to mastering a craft?",QZ023Q6A20,"Using only expensive materials",FALSE
